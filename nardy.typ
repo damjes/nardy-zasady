@@ -138,7 +138,7 @@ Oznacza to, że~plansza podzielona jest na~cztery ćwiartki po~sześć pól każ
 
 Ułożenie początkowe, kierunki ruchów obu graczy i~numerację pól dla~gracza żółtego przedstawia poniższa rycina:
 
-#figure(image("obrazki-gen/poczatek.pdf", width: 100%))
+#figure(image("schematy.pdf", page: 1, width: 100%))
 
 #przyklej[Ustawienie początkowe to:]
 
@@ -179,13 +179,13 @@ Gracz może realizować wyprowadzenie pionów na~dwór tylko wtedy, jeżeli wszy
 
 Pion może stanąć na~pustym polu. Pion może stanąć na~polu zajętym przez piony gracza aktualnie wykonującego ruch. Układa się wtedy piony w~linii wzdłuż najdłuższej wysokości trójkąta (patrz choćby ustawienie początkowe na~rycinie wyżej). W~przypadku wyjścia poza rozmiar pola dopuszcza się umieszczenie pionów w~jednej linii w~przedłużeniu pola (o~ile to nie zakłóca pola naprzeciwko) lub~ułożenie piona na~innych pionach zajmujących to samo pole (patrz rycina poniżej).
 
-#figure(image("obrazki-gen/duzo_pionow.pdf", width: 80%))
+#figure(image("schematy.pdf", page: 6, width: 80%))
 
 Pion może stanąć na~polu zajętym przez przeciwnika tylko wtedy, kiedy pion przeciwnika stoi samotnie. W~takim przypadku pion przeciwnika zostaje zbity i~odłożony na~bandę. Na~rycinach poniżej widać sytuację przed biciem i~po.
 
-#figure(image("obrazki-gen/bicie_przed.pdf", width: 80%))
+#figure(image("schematy.pdf", page: 4, width: 80%))
 
-#figure(image("obrazki-gen/bicie_po.pdf", width: 80%))
+#figure(image("schematy.pdf", page: 5, width: 80%))
 
 Jeżeli na~polu stoją dwa lub~więcej piony przeciwnika, to pion gracza nie może na~tym polu stanąć.
 
@@ -202,7 +202,7 @@ Jeżeli gracz wyrzuca 5-2, to nie ma podwojenia.
 
 Jeżeli gracz wyrzuca 5-5, to dwa ruchy o~5 zostają podwojone do~czterech ruchów o~5. Zatem wyrzucenie danej wartości dwukrotnie w~ramach jednego rzutu oznacza cztery ruchy o~tę wartość.
 
-#figure(image("obrazki-gen/dublowanie_rzutu.pdf", width: 60%))
+#figure(image("schematy.pdf", page: 7, width: 60%))
 ]
 
 Wyjątek stanowi pierwsza tura. Każdy z~graczy wykonuje wtedy rzut jedną kością. Zaczyna ten gracz, na~którego kości wypadła większa wartość. Gracz wykorzystuje oba wyniki do~ruchów, nie wykonuje się ponownego rzutu (jak przed kolejnymi turami). W~przypadku wystąpienia dubletu każdy z~graczy powtarza rzut.
@@ -215,7 +215,7 @@ Można przesunąć tego samego piona wielokrotnie, o~ile robi się to etapami.
 - gracz może wykonać ruch o~3 (o~ile może stanąć na~polu 19), a~następnie stanąć na~polu 14 (również w~miarę możliwości);
 - gracz może wykonać ruch o~5 (stanąć w~miarę możliwości na~17), a~następnie (jeżeli możliwe) na~14;
 - jeżeli pola 17 oraz~19 są zajęte przez piony przeciwnika (oba więcej, niż jednym), to dla~tego rzutu ruch z~pola 22 do~pola 14 jest niemożliwy, patrz rycina;
-#figure(image("obrazki-gen/blokada_ruchu.pdf", width: 100%))
+#figure(image("schematy.pdf", page: 8, width: 100%))
 - oczywiście, jeżeli pole 14 jest zajęte przez piony (co najmniej dwa) przeciwnika, to ruch na~pole 14 jest niemożliwy, niezależnie od~zajętości innych pól.
 ]
 
@@ -225,7 +225,7 @@ Gracz ma obowiązek najpierw wprowadzić wszystkie zbite piony. Kolejka gracza k
 Jeżeli gracz wyrzuci 3, to może wejść na~planszę i~poruszyć się o~trzy pola, ie.~wejść na~pole 22 (o~ile może na~nim stanąć).
 ]
 
-#figure(image("obrazki-gen/wejscie.pdf", width: 100%))
+#figure(image("schematy.pdf", page: 9, width: 100%))
 
 Gracz ma obowiązek wykonać wszystkie ruchy, a~jeżeli nie jest to możliwe, to najwięcej ruchów, ile jest możliwe. W~przypadku możliwości ruchu jedną albo drugą kością należy wybrać wyższy wynik rzutu. Jeżeli ruch wartością z~jednej kości jest niemożliwy, ale~stanie się możliwy po~odpowiednim ruchu wartością z~drugiej kości, taki ruch z~drugiej kości staje się obowiązkowy. Pogorszenie sytuacji na~planszy nie stanowi usprawiedliwienia. Niemożliwe do~wykonania ruchy przepadają.
 
@@ -235,7 +235,7 @@ Gracz może (po~spełnieniu warunków) wyprowadzić piona na~dwór wtedy, kiedy 
 
 #callout_example()[
 Gracz ma tylko po~trzy piony na~polach 1 i~2 i~wyrzuca 5-5. Nie może wyprowadzić piona z~pustego pola 5 ani nie może przesunąć pionów o~5, zatem dokonuje wyprowadzenia czterech pionów – trzech z~pola 2 i~jednego z~pola 1. Jest to jedyny legalny ruch (patrz rycina).
-#figure(image("obrazki-gen/koncowka.pdf", width: 80%))
+#figure(image("schematy.pdf", page: 10, width: 80%))
 ]
 
 == Zasady etykiety przy rzutach kośćmi
@@ -264,7 +264,7 @@ Wygrana to jeden punkt. Jeżeli gracz wyprowadzi wszystkie piony, zanim przeciwn
 
 Kość dublującą kładzie się liczbą 64 (lub logiem) do~góry na~jednym (lewym/prawym) z~boków w~połowie planszy. Kość leżąca na~środku jest do~dyspozycji obu graczy i~oznacza wartość 1 (patrz rycina poniżej). Kość leżąca przy jednym z~graczy jest do~jego wyłącznej dyspozycji i~oznacza mnożnik stawki wskazany na~kości.
 
-#figure(image("obrazki-gen/kosc_poczatek.pdf", width: 100%))
+#figure(image("schematy.pdf", page: 11, width: 100%))
 
 Wartość kości dublującej stanowi mnożnik punktów.
 
@@ -278,7 +278,7 @@ Gracz, który ma kość do~dyspozycji, może, przed wykonaniem rzutu, sięgnąć
 #callout_example()[
 Przeciwnik ma kość wskazującą 4. Kładzie on przed graczem kość z~wartością 8 (patrz rycina poniżej). Gracz może kość odrzucić i~natychmiast przegrać czterema punktami lub~kość przyjąć, mieć ją do~dyspozycji i~zgodzić się na~kolejne podwojenie stawki.
 
-#figure(image("obrazki-gen/kosc_w_grze.pdf", width: 60%))
+#figure(image("schematy.pdf", page: 12, width: 60%))
 ]
 
 == Bóbr, szop i inne zwierzątka
