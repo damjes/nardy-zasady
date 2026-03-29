@@ -259,10 +259,9 @@ Gracz, który ma kość do~dyspozycji, może, przed wykonaniem rzutu, sięgnąć
 
 #callout_example()[
 Przeciwnik ma kość wskazującą 4. Kładzie on przed graczem kość z~wartością 8 (patrz rycina poniżej). Gracz może kość odrzucić i~natychmiast przegrać czterema punktami lub~kość przyjąć, mieć ją do~dyspozycji i~zgodzić się na~kolejne podwojenie stawki.
-]
 
 #figure(image("obrazki-gen/kosc_w_grze.pdf", width: 60%))
-
+]
 
 == Bóbr, szop i inne zwierzątka
 
