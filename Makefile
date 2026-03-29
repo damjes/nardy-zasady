@@ -5,7 +5,7 @@ nardy.pdf: nardy.typ schematy.pdf
 	typst compile --deps nardy.d --deps-format make nardy.typ nardy.pdf
 
 schematy.pdf: schematy.drawio
-	drawio schematy.drawio -x --crop -o schematy.pdf
+	drawio schematy.drawio -xa --crop -o schematy.pdf
 
 clean:
 	rm -f nardy.pdf schematy.pdf nardy.d
