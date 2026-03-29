@@ -26,6 +26,10 @@
 	)
 )
 
+#set heading(
+	numbering: "1.1.",
+)
+
 // Callout box definitions
 #let callout_box(accent, bg, icon, title, body, sticky) = block(
 	width: 100%,
