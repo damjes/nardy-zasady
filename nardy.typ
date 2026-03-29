@@ -5,7 +5,7 @@
 
 #set page(
 	paper: "a5",
-	footer: context align(center, text(size: 10pt)[#counter(page).display()]),
+	numbering: none,
 )
 
 #set text(
@@ -62,7 +62,7 @@
 	#par(body)
 ]
 
-// ─── Title page ───────────────────────────────────────────────────────────────
+// ─── Strona tytułowa ───
 #v(2em)
 #align(center)[
 	#set par(justify: false)
@@ -72,15 +72,29 @@
 	#v(0.6em)
 	#text(size: 12pt, style: "italic")[wiel. Damjes]
 ]
-#v(1.5em)
 
-Osobiście przyjmuję nazwę nardy, jednak dopuszcza się inne w/w warianty. Niniejsze zasady zostały skodyfikowane, ponieważ nie znalazłem pełnego opisu w~języku polskim, a~taki opis jest potrzebny w~formie pisanej, żeby potem nie było (jak zwykle), że~zasada istnieje, a~ja "o~niej nie mówiłem, więc~na pewno oszukuję".
+#figure(image("obrazki/Codex_Manesse_262v_Herr_Goeli.jpg", width: 50%), placement: bottom)
+
+#pagebreak(to: "odd")
+
+// --- Treść dokumentu ---
+#set page(numbering: "1")
+
+#outline()
+
+#pagebreak(to: "odd")
+
+= Wstęp
+
+Osobiście przyjmuję nazwę gry _nardy_, jednak dopuszcza się inne wymienione w podtytule warianty.
+
+Niniejsze zasady zostały skodyfikowane, ponieważ nie znalazłem pełnego opisu w~języku polskim, a~taki opis jest potrzebny w~formie pisanej, żeby potem nie było (jak zwykle), że~zasada istnieje, a~ja "o~niej nie mówiłem, więc~na pewno oszukuję".
 
 = Wyposażenie
 
 Na~pierwszej rycinie jest widoczny zestaw do~gry w~nardy, gotowy do~rozpoczęcia rozgrywki:
 
-#obrazek("obrazki/Backgammon_lg.png", image-width: 100%, margin: 0.2em)
+#obrazek("obrazki/Backgammon_lg.png", image-width: 100%, margin: 0.5em)
 
 #przyklej[Do~grania w~nardy niezbędne są:]
 
@@ -564,3 +578,14 @@ Jasne, turnieje, o~których wspominałem w~poprzednim pytaniu czasami można ogl
 #przyklej[Zdjęcia pochodzą z~Wikipedii i~Wikimedia Commons.]
 
 Grafiki wektorowe są dziełem autora (czyli moim).
+
+
+// --- Tył ---
+
+#set page(numbering: none)
+
+#pagebreak(to: "even")
+
+#align(center + bottom)[
+	copyleft #sym.copyleft 2025-2026 under DamjesaP by wiel. Damjes
+]
