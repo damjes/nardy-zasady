@@ -1,16 +1,13 @@
-DRAWIO := schematy.drawio
-SCHEMATY := schematy.pdf
-
 .DEFAULT_GOAL := nardy.pdf
 .PHONY: clean
 
-nardy.pdf: nardy.typ $(SCHEMATY)
+nardy.pdf: nardy.typ schematy.pdf
 	typst compile --deps nardy.d --deps-format make nardy.typ nardy.pdf
 
-$(SCHEMATY): $(DRAWIO)
-	drawio $(DRAWIO) -x --crop -o $@
+schematy.pdf: schematy.drawio
+	drawio schematy.drawio -x --crop -o schematy.pdf
 
 clean:
-	rm -f nardy.pdf $(SCHEMATY) nardy.d
+	rm -f nardy.pdf schematy.pdf nardy.d
 
 -include nardy.d
