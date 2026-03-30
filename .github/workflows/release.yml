@@ -19,7 +19,17 @@ jobs:
       - name: Install system dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y xvfb wget curl libgbm1 libasound2t64 fonts-libertinus
+          sudo apt-get install -y xvfb wget curl libgbm1 libasound2t64
+
+      - name: Install Libertinus Serif
+        run: |
+          LIBERTINUS_VERSION=$(curl -s https://api.github.com/repos/alerque/libertinus/releases/latest \
+            | grep '"tag_name"' | sed 's/.*"v\([^"]*\)".*/\1/')
+          wget -q "https://github.com/alerque/libertinus/releases/download/v${LIBERTINUS_VERSION}/Libertinus-${LIBERTINUS_VERSION}.tar.xz"
+          mkdir -p ~/.local/share/fonts/Libertinus
+          tar xf Libertinus-${LIBERTINUS_VERSION}.tar.xz --strip-components=2 \
+            -C ~/.local/share/fonts/Libertinus --wildcards '*/OTF/*.otf'
+          fc-cache -f
 
       - name: Install draw.io
         run: |
