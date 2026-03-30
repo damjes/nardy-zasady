@@ -57,7 +57,6 @@ jobs:
           path: nardy.pdf
 
       - name: Create GitHub Release
-        if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
           files: nardy.pdf
