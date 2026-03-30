@@ -9,7 +9,7 @@
 )
 
 #set text(
-	font: ("Linux Libertine", "Libertinus Serif"),
+	font: "Libertinus Serif",
 	size: 11pt,
 	lang: "pl",
 	hyphenate: true,
