@@ -23,4 +23,4 @@ Gotowy PDF jest dostępny w zakładce [Releases](../../releases/latest).
 
 Projekt objęty licencją **DamjesaP 2.1** (Damjesa Permesilo 2.1) — zob. [LICENSE.pl.md](LICENSE.pl.md).
 
-Copyleft 2025-2026 wiel. Damjes
+Copyleft 2024-2026 wiel. Damjes

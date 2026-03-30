@@ -92,7 +92,7 @@
 #pagebreak()
 
 #align(center + bottom)[
-	copyleft #sym.copyleft 2025-2026
+	copyleft #sym.copyleft 2024-2026
 
 	under DamjesaP 2.1
 
