@@ -588,7 +588,11 @@ Grafiki wektorowe są dziełem autora (czyli moim).
 
 #set page(numbering: none)
 
-#pagebreak(to: "even")
+#pagebreak(to: "odd")
+
+// pusta strona okładki
+
+#pagebreak()
 
 #align(center + bottom)[
 	copyleft #sym.copyleft 2025-2026 under DamjesaP by wiel. Damjes
