@@ -208,9 +208,9 @@ Jeżeli gracz zacznie wyprowadzać piony z~domu i~co najmniej jeden z~jego pion�
 Możliwości ruchu w~grze wyznaczane są przez rzut kośćmi. Gracze rzucają na~początku swojej tury dwiema kośćmi. Każda kość oznacza o~ile można przesunąć pojedynczego piona. W~wypadku wyrzucenia dubletu (ie.~tej samej wartości na~obu kościach) rzut ulega podwojeniu.
 
 #callout_example()[
-Jeżeli gracz wyrzuca 5-2, to nie ma podwojenia.
+Jeżeli gracz wyrzuca `5-2`, to nie ma podwojenia.
 
-Jeżeli gracz wyrzuca 5-5, to dwa ruchy o~5 zostają podwojone do~czterech ruchów o~5. Zatem wyrzucenie danej wartości dwukrotnie w~ramach jednego rzutu oznacza cztery ruchy o~tę wartość.
+Jeżeli gracz wyrzuca `5-5`, to dwa ruchy o~5 zostają podwojone do~czterech ruchów o~5. Zatem wyrzucenie danej wartości dwukrotnie w~ramach jednego rzutu oznacza cztery ruchy o~tę wartość.
 
 #figure(image("schematy.pdf", page: 7, width: 60%))
 ]
@@ -220,7 +220,7 @@ Wyjątek stanowi pierwsza tura. Każdy z~graczy wykonuje wtedy rzut jedną kośc
 Można przesunąć tego samego piona wielokrotnie, o~ile robi się to etapami.
 
 #callout_example()[
-#przyklej[Pion jest na~polu 22, gracz chce go przesunąć na~pole 14, na~kościach wypadło 5-3:]
+#przyklej[Pion jest na~polu 22, gracz chce go przesunąć na~pole 14, na~kościach wypadło `5-3`:]
 
 - gracz może wykonać ruch o~3 (o~ile może stanąć na~polu 19), a~następnie stanąć na~polu 14 (również w~miarę możliwości);
 - gracz może wykonać ruch o~5 (stanąć w~miarę możliwości na~17), a~następnie (jeżeli możliwe) na~14;
@@ -244,7 +244,7 @@ Gracz ma obowiązek wykonać wszystkie ruchy, a~jeżeli nie jest to możliwe, to
 Gracz może (po~spełnieniu warunków) wyprowadzić piona na~dwór wtedy, kiedy dystans do~końca planszy (czyli numer pola) odpowiada wyrzuconej wartości. W~przypadku braku możliwości ruchu, spowodowanego tym, że~piony stoją za~blisko końca planszy, dopuszcza się wyprowadzenie na~dwór piona najdalszego.
 
 #callout_example()[
-Gracz ma tylko po~trzy piony na~polach 1 i~2 i~wyrzuca 5-5. Nie może wyprowadzić piona z~pustego pola 5 ani nie może przesunąć pionów o~5, zatem dokonuje wyprowadzenia czterech pionów – trzech z~pola 2 i~jednego z~pola 1. Jest to jedyny legalny ruch (patrz rycina).
+Gracz ma tylko po~trzy piony na~polach 1 i~2 i~wyrzuca `5-5`. Nie może wyprowadzić piona z~pustego pola 5 ani nie może przesunąć pionów o~5, zatem dokonuje wyprowadzenia czterech pionów – trzech z~pola 2 i~jednego z~pola 1. Jest to jedyny legalny ruch (patrz rycina).
 #figure(image("schematy.pdf", page: 10, width: 80%))
 ]
 
@@ -404,7 +404,7 @@ Zegar (jeżeli jest używany) należy ustawić po~stronie domów graczy.
 Simple Delay (znany też~jako US Delay) działa w~ten sposób, że~zegar odmierza ten czas jako pierwszy. Jeżeli gracz zdąży w~tym czasie wykonać ruch, nie odejmuje się czasu z~jego zegara, zaś urządzenie zaczyna odmierzać Simple Delay przeciwnikowi. Jeżeli czas Simple Delay się skończy, czas jest brany z~głównego czasu danego gracza.
 
 #callout_example()[
-Początek gry. Gra do~5 punktów, zatem ustawienie zegara to 10 minut + 12 sekund Simple Delay. Gracz wykonał ruch w~7 sekund, zatem jego zegar dalej wskazuje 10:00. Jego przeciwnik wykonał ruch w~20 sekund, co oznacza, że~zużył on całe 12 sekund Simple Delay, a~pozostałe 8 sekund zużył on z~czasu głównego, zatem po~ruchu jego zegar wskaże 09:52, czyli pozostało mu 9 minut i~52 sekundy.
+Początek gry. Gra do~5 punktów, zatem ustawienie zegara to 10 minut + 12 sekund Simple Delay. Gracz wykonał ruch w~7 sekund, zatem jego zegar dalej wskazuje `10:00`. Jego przeciwnik wykonał ruch w~20 sekund, co oznacza, że~zużył on całe 12 sekund Simple Delay, a~pozostałe 8 sekund zużył on z~czasu głównego, zatem po~ruchu jego zegar wskaże `09:52`, czyli pozostało mu 9 minut i~52 sekundy.
 ]
 
 == Alternatywy do~Simple Delay
@@ -418,7 +418,7 @@ Mogą występować pewne różnice w~implementacji niżej wymienionych systemów
 W systemie Fischera główny czas gracza jest zużywany od~razu. Po~ruchu gracza (ie.~po~naciśnięciu przycisku) zostaje doliczony stały, ustalony wcześniej czas.
 
 #callout_example()[
-Gra toczy się wg ustawień 14 minut + 12 sekund w~systemie Fischera. Gracz na~zegarze ma wskazanie 13:59 (co oznacza pozostały czas 13 minut i~59 sekund). Jeżeli gracz wykona ruch w~4 sekundy, to jego zegar wskaże 13:55, a~po~naciśnięciu przycisku zostanie doliczone jeszcze 12 sekund i~zegar wskaże 14:07.
+Gra toczy się wg ustawień 14 minut + 12 sekund w~systemie Fischera. Gracz na~zegarze ma wskazanie `13:59` (co oznacza pozostały czas 13 minut i~59 sekund). Jeżeli gracz wykona ruch w~4 sekundy, to jego zegar wskaże `13:55`, a~po~naciśnięciu przycisku zostanie doliczone jeszcze 12 sekund i~zegar wskaże `14:07`.
 ]
 
 #callout_attention()[
@@ -430,7 +430,7 @@ W~systemie Fischera nie stanowi problemu sytuacja, w~której gracz ma do~dyspozy
 System Bronsteina tym różni się od~systemu Fischera, że~czas nie może ulec wydłużeniu.
 
 #callout_example()[
-Dla~przykładu powyżej, jeżeli zegar gracza pokazuje 13:59 i~gracz wykona ruch poniżej 12 sekund (eg.~w~2 sekundy), to zegar po~ruchu dalej będzie wskazywał 13:59. Dla~ruchu trwającego 15 sekund ostateczne wskazanie wyniesie 13:56.
+Dla~przykładu powyżej, jeżeli zegar gracza pokazuje `13:59` i~gracz wykona ruch poniżej 12 sekund (eg.~w~2 sekundy), to zegar po~ruchu dalej będzie wskazywał `13:59`. Dla~ruchu trwającego 15 sekund ostateczne wskazanie wyniesie `13:56`.
 ]
 
 === Różnice względem Simple Delay
@@ -550,7 +550,7 @@ Dobre pytanie, teoretycznie może wystąpić tu problem, reguła Crawforda zabra
 
 Jeżeli gramy gry do~określonego wyniku (eg.~do~siedmiu punktów), to jest to gra meczowa i~gracz, który osiągnie (lub przekroczy) ustalony wcześniej limit, wygrywa cały mecz.
 
-Zgodnie z~luudoo.com#footnote[#rawLink("https://luudoo.com/media/wysiwyg/downloads/instructions/Backgammon-rules_-Instructions-for-customised-backgammon-_A4-print_.pdf")] gra, która~nie jest meczowa ("match play"), jest grą na~pieniądze ("money play"), niezależnie (sic!), czy jest to hazard na~pieniądze, czy nie. Każdy punkt liczy się tak samo i~każda rozgrywka jest osobną grą. W~przypadku hazardu na~pieniądze, każdy punkt oznacza określoną kwotę – eg.~wygranie dwoma punktami oznacza zapłatę 20 złotych, jeżeli gracze umówili się na~10 zł za~punkt.
+Zgodnie z~luudoo.com#footnote[#rawLink("https://luudoo.com/media/wysiwyg/downloads/instructions/Backgammon-rules_-Instructions-for-customised-backgammon-_A4-print_.pdf")] gra, która~nie jest meczowa (_match play_), jest grą na~pieniądze (_money play_), niezależnie (sic!), czy jest to hazard na~pieniądze, czy nie. Każdy punkt liczy się tak samo i~każda rozgrywka jest osobną grą. W~przypadku hazardu na~pieniądze, każdy punkt oznacza określoną kwotę – eg.~wygranie dwoma punktami oznacza zapłatę 20 złotych, jeżeli gracze umówili się na~10 zł za~punkt.
 
 Rodzaj gry wpływa na~strategię, szczególnie sięganie po~kość dublującą. Gracz bliski wygranej meczu (Luudoo podaje przykład wyniku 7:5 przy grze do~9) niechętnie będzie po~taką kość sięgał, natomiast jeżeli gra będzie grą hazardową na~pieniądze, to i~zachęta do~użycia kości podwajającej będzie większa.
 
@@ -604,5 +604,9 @@ Całość jest dostępna na~licencji DamjesaP 2.1 dostępnej pod adresem #rawLin
 #pagebreak()
 
 #align(center + bottom)[
-	copyleft #sym.copyleft 2025-2026 under DamjesaP by wiel. Damjes
+	copyleft #sym.copyleft 2025-2026
+	
+	under DamjesaP 2.1
+	
+	by wiel. Damjes
 ]
