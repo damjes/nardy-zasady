@@ -21,6 +21,6 @@ Gotowy PDF jest dostępny w zakładce [Releases](../../releases/latest).
 
 ## Licencja
 
-Projekt objęty licencją **DamjesaP 2.0** (Damjesa License v. 2.0) — zob. [LICENSE.pl.md](LICENSE.pl.md).
+Projekt objęty licencją **DamjesaP 2.1** (Damjesa Permesilo 2.1) — zob. [LICENSE.pl.md](LICENSE.pl.md).
 
 Copyleft 2025-2026 wiel. Damjes
