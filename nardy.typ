@@ -367,7 +367,7 @@ Jeżeli gracze grają do~5 punktów, to każdy z~graczy zaczyna z~10 minutami na
 
 == Etykieta gry z~zegarem
 
-W przypadku gry z~zegarem zaleca się użycie tego samego zestawu dwóch kości przez obu graczy. Przeciwnik naciśnięciem przycisku stopuje swój zegar i~uruchamia zegar gracza. Stanowi to potwierdzenie ruchu (nie należy dotykać kości po~wykonaniu ruchu). Gracz bierze kości (z~których przed chwilą korzystał przeciwnik) z~planszy, wykonuje rzut, wykonuje ruch i~następnie naciska przycisk zegara. Cykl się powtarza – przeciwnik rzuca tymi samymi kośćmi i~gra toczy się dalej. Rzut kośćmi, ruch i~naciśnięcie zegara musi się odbyć w~tej kolejności i~tą samą ręką.
+W przypadku gry z~zegarem zaleca się użycie tego samego zestawu dwóch kości przez obu graczy. Przeciwnik naciśnięciem przycisku stopuje swój zegar i~uruchamia zegar gracza. Stanowi to potwierdzenie ruchu (nie należy dotykać kości po~wykonaniu ruchu). Gracz bierze kości (z~których przed chwilą korzystał przeciwnik) z~planszy, wykonuje rzut, wykonuje ruch i~następnie naciska przycisk zegara. Cykl się powtarza – przeciwnik rzuca tymi samymi kośćmi i~gra toczy się dalej. Ruch oraz~naciśnięcie zegara musi się odbyć w~tej kolejności i~tą samą ręką.
 
 Przekazanie oraz~przyjęcie kości dublującej wymagają uruchomienia czasu przeciwnika przez naciśnięcie przycisku na~zegarze (o~ile używa się zegara).
 
