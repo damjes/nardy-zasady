@@ -2,7 +2,7 @@
 
 Na~pierwszej rycinie jest widoczny zestaw do~gry w~nardy, gotowy do~rozpoczęcia rozgrywki:
 
-#obrazek("../obrazki/Backgammon_lg.png", image-width: 100%, margin: 0.5em)
+#obrazek("obrazki/Backgammon_lg.png", image-width: 100%, margin: 0.5em)
 
 #przyklej[Do~grania w~nardy niezbędne są:]
 
@@ -24,6 +24,6 @@ Czasami (zwłaszcza na~turniejach) używa się tzw. kości precyzyjnych. Są to 
 - wieżę do~rzucania kośćmi: kości wrzuca się od~góry, następnie turlają się one po~wewnętrznych przeszkodach i~wypadają u~dołu, zastępuje to użycie kubków (na~pierwszej rycinie poniżej widoczna jest wykonana w~IV wieku wieża Vettweiss-Froitzheim ze~zbiorów Reńskiego Muzeum Narodowego w~Bonn);
 - planszę do~liczenia punktów w~czasie meczu (patrz druga rycina poniżej, plansza do~punktów znajduje się za~planszą do~gry i~wskazuje wynik 1:1 i~grę do~7).
 
-#obrazek("../obrazki/Vettweiss-Froitzheim_Dice_Tower.jpg", image-width: 70%, margin: 0.2em)
+#obrazek("obrazki/Vettweiss-Froitzheim_Dice_Tower.jpg", image-width: 70%, margin: 0.2em)
 
-#obrazek("../obrazki/Deskohrani_2009_353.jpg", image-width: 80%, margin: 0.2em)
+#obrazek("obrazki/Deskohrani_2009_353.jpg", image-width: 80%, margin: 0.2em)
