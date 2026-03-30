@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 == Korzyści ze stosowania zegara
 
 #przyklej[Brytyjska Federacja Nard (UKBGF) wskazuje na~swojej stronie#footnote[#rawLink("https://ukbgf.com/members/articles/the-newcomers-guide-to-clocks/")] następujące korzyści z~użycia zegara:]

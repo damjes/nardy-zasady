@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 = Wyposażenie
 
 Na~pierwszej rycinie jest widoczny zestaw do~gry w~nardy, gotowy do~rozpoczęcia rozgrywki:

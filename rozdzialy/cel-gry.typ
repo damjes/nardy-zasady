@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 = Cel gry
 
 #przyklej[Celem gracza jest:]

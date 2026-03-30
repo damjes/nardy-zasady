@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 == Notacja ruchu
 
 Ruch zapisuje się, podając pola rozdzielone łamaną kreską (`/`). W~przypadku powtórzeń, zapisuje się ich liczbę w~nawiasach. Bicie zapisuje się asteryskiem (`*`) po~numerze pola.

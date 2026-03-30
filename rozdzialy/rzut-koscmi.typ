@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 = Rzut kośćmi
 
 Możliwości ruchu w~grze wyznaczane są przez rzut kośćmi. Gracze rzucają na~początku swojej tury dwiema kośćmi. Każda kość oznacza o~ile można przesunąć pojedynczego piona. W~wypadku wyrzucenia dubletu (ie.~tej samej wartości na~obu kościach) rzut ulega podwojeniu.

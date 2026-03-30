@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 = Budowa planszy i~kierunek ruchu
 
 #callout_tldr()[

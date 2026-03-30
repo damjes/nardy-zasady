@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 == Zasady etykiety przy rzutach kośćmi
 
 Każdy z~graczy może wykorzystywać swoją parę kości (jeżeli są dostępne). Włożenie kości do~kubka traktowane jest jako potwierdzenie ruchu. Zanim gracz potwierdzi ruch, może on wykonać jakiś ruch, cofnąć jego wykonanie i~wykonać inny. Tego typu zmian zdania możliwych jest więcej. Ruch jest ostateczny, jeżeli kości zostaną zabrane z~planszy lub~(ewentualnie) zależnie od~lokalnych ustaleń, eg.~po~ustnym potwierdzeniu.

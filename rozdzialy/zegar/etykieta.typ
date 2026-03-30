@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 == Etykieta gry z~zegarem
 
 W przypadku gry z~zegarem zaleca się użycie tego samego zestawu dwóch kości przez obu graczy. Przeciwnik naciśnięciem przycisku stopuje swój zegar i~uruchamia zegar gracza. Stanowi to potwierdzenie ruchu (nie należy dotykać kości po~wykonaniu ruchu). Gracz bierze kości (z~których przed chwilą korzystał przeciwnik) z~planszy, wykonuje rzut, wykonuje ruch i~następnie naciska przycisk zegara. Cykl się powtarza – przeciwnik rzuca tymi samymi kośćmi i~gra toczy się dalej. Ruch oraz~naciśnięcie zegara musi się odbyć w~tej kolejności i~tą samą ręką.

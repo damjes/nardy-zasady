@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 == Bóbr, szop i inne zwierzątka
 
 #callout_attention()[

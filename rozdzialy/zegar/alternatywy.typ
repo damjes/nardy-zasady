@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 == Alternatywy do~Simple Delay
 
 #callout_attention()[

@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 = Zegar <zegar>
 
 Do~gry można (nie jest to wymagane) użyć specjalnego zegara (znanego też~jako _zegar szachowy_ lub~_game clock_, patrz rycina poniżej). Są to dwa zegary zespolone tak, że~w~czasie normalnej pracy jeden z~nich odmierza czas w~dół, a~drugi jest zatrzymany. Istnieją zegary, w~których powyższe zachowanie zależy od~wybranego trybu.

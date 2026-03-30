@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 == Reguła Crawforda
 
 #callout_attention()[

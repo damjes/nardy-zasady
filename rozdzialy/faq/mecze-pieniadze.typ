@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 == O~co chodzi z~meczami i~grą na~pieniądze? <money-game>
 
 Jeżeli gramy gry do~określonego wyniku (eg.~do~siedmiu punktów), to jest to gra meczowa i~gracz, który osiągnie (lub przekroczy) ustalony wcześniej limit, wygrywa cały mecz.
