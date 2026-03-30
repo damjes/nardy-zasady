@@ -66,6 +66,8 @@
 	#par(body)
 ]
 
+#let rawLink(url) = link(url)[#raw(url)]
+
 // ─── Strona tytułowa ───
 #v(2em)
 #align(center)[
@@ -254,7 +256,7 @@ Niepoprawny rzut należy powtórzyć. Nawet jeżeli jedna z~kości oparła się 
 
 = Punktacja
 
-W pojedynczej grze wyprowadzenie pionów przed przeciwnikiem to wygrana. Gra taka czasami jest określana grą na~pieniądze (patrz FAQ), nawet jeżeli nie stanowi rozgrywki hazardowej (sic!). Mark Driver#footnote[#link("https://www.gammonvillage.com/backgammon/magazine/the_money_game.cfm")] uważa tę nazwę za~mylącą i~proponuje nazwy takie jak _gra pojedyncza_ lub~_nielimitowany mecz_.
+W pojedynczej grze wyprowadzenie pionów przed przeciwnikiem to wygrana. Gra taka czasami jest określana grą na~pieniądze (patrz FAQ), nawet jeżeli nie stanowi rozgrywki hazardowej (sic!). Mark Driver#footnote[#rawLink("https://www.gammonvillage.com/backgammon/magazine/the_money_game.cfm")] uważa tę nazwę za~mylącą i~proponuje nazwy takie jak _gra pojedyncza_ lub~_nielimitowany mecz_.
 
 W~przypadku meczów gra toczy się do~ustalonej (zwykle nieparzystej) liczby punktów. Wygrywa ten gracz, który jako pierwszy ją przekroczy.
 
@@ -443,7 +445,7 @@ Gracz ma do~dyspozycji 3 sekundy głównego czasu. Jeżeli gracz wykona ruch w~5
 
 == Korzyści ze stosowania zegara
 
-#przyklej[Brytyjska Federacja Nard (UKBGF) wskazuje na~swojej stronie#footnote[#link("https://ukbgf.com/members/articles/the-newcomers-guide-to-clocks/")] następujące korzyści z~użycia zegara:]
+#przyklej[Brytyjska Federacja Nard (UKBGF) wskazuje na~swojej stronie#footnote[#rawLink("https://ukbgf.com/members/articles/the-newcomers-guide-to-clocks/")] następujące korzyści z~użycia zegara:]
 
 - *eliminacja przedwczesnych rzutów:* ponieważ rzut następuje po~naciśnięciu zegara;
 - *łatwiejsze rozwiązywanie sporów:* gracz nie zabiera kości, lecz naciska zegar, zatem łatwiej jest dowieść nieprawidłowego ruchu, ponieważ kości wciąż wskazują, co wypadło u~przeciwnika, a~nie leżą w~kubku jednego z~graczy;
@@ -524,7 +526,7 @@ Kości Sichermana nie są używane w~nardach, zatem ich znajomość nie jest wym
 
 Jeżeli analizujemy rozkład sumy rzutów dwiema kostkami K6, to najczęściej wypada 7, a~najrzadziej 2 i~12. Kości Sichermana mają alternatywny układ ścianek (na~jednej jest 1, 2, 2, 3, 3, 4, zaś na~drugiej 1, 3, 4, 5, 6, 8), jednak dają identyczny rozkład sumy dwóch kości. W~nardach nieistotna jest suma, ale~pojedyncze rzuty, dlatego kości te nie mają zastosowania. Można łatwo dowieść (choćby za~pomocą rozkładu wielomianów), że~kości Sichermana stanowią jedyną alternatywę dla~dwóch kostek K6, ie.~nie da się zaproponować układu wartości na~dwóch kostkach K6, który~byłby inny, niż kości klasyczne i~kości Sichermana, a~dawałby ten sam rozkład (za wyjątkiem trywialnych przykładów typu kości 0-5 i~2-7).
 
-Nick Ballard zaproponował użycie kości Sichermana do~nard i~nazwał ten wariant Sichgammonem. Film jest dostępny pod~adresem #link("https://www.youtube.com/watch?v=8-ROEd244tw").
+Nick Ballard zaproponował użycie kości Sichermana do~nard i~nazwał ten wariant Sichgammonem. Film jest dostępny pod~adresem #rawLink("https://www.youtube.com/watch?v=8-ROEd244tw").
 
 == Co jest ważniejsze: reguła Crawforda, czy reguła Murphyego?
 
@@ -540,7 +542,7 @@ Dobre pytanie, teoretycznie może wystąpić tu problem, reguła Crawforda zabra
 
 Jeżeli gramy gry do~określonego wyniku (eg.~do~siedmiu punktów), to jest to gra meczowa i~gracz, który osiągnie (lub przekroczy) ustalony wcześniej limit, wygrywa cały mecz.
 
-Zgodnie z~luudoo.com#footnote[#link("https://luudoo.com/media/wysiwyg/downloads/instructions/Backgammon-rules_-Instructions-for-customised-backgammon-_A4-print_.pdf")] gra, która~nie jest meczowa ("match play"), jest grą na~pieniądze ("money play"), niezależnie (sic!), czy jest to hazard na~pieniądze, czy nie. Każdy punkt liczy się tak samo i~każda rozgrywka jest osobną grą. W~przypadku hazardu na~pieniądze, każdy punkt oznacza określoną kwotę – eg.~wygranie dwoma punktami oznacza zapłatę 20 złotych, jeżeli gracze umówili się na~10 zł za~punkt.
+Zgodnie z~luudoo.com#footnote[#rawLink("https://luudoo.com/media/wysiwyg/downloads/instructions/Backgammon-rules_-Instructions-for-customised-backgammon-_A4-print_.pdf")] gra, która~nie jest meczowa ("match play"), jest grą na~pieniądze ("money play"), niezależnie (sic!), czy jest to hazard na~pieniądze, czy nie. Każdy punkt liczy się tak samo i~każda rozgrywka jest osobną grą. W~przypadku hazardu na~pieniądze, każdy punkt oznacza określoną kwotę – eg.~wygranie dwoma punktami oznacza zapłatę 20 złotych, jeżeli gracze umówili się na~10 zł za~punkt.
 
 Rodzaj gry wpływa na~strategię, szczególnie sięganie po~kość dublującą. Gracz bliski wygranej meczu (Luudoo podaje przykład wyniku 7:5 przy grze do~9) niechętnie będzie po~taką kość sięgał, natomiast jeżeli gra będzie grą hazardową na~pieniądze, to i~zachęta do~użycia kości podwajającej będzie większa.
 
@@ -550,19 +552,19 @@ Nardy to nie szachy i~tutaj można przesunąć piony, pomyśleć, cofnąć ruch,
 
 == Czym był system 12-punktowy?
 
-Zgodnie z~bkgm.com#footnote[#link("https://www.bkgm.com/faq/BasicRules.html#what_is_the_24_point_numbering_system_")] kiedyś (do~lat 1980) numerowano pola od~1 do~12 i~przeciwne pola miały te same numery. W~celu odróżnienia pól stosowano prefiksy, eg.~`W12` lub~`B12`.
+Zgodnie z~bkgm.com#footnote[#rawLink("https://www.bkgm.com/faq/BasicRules.html#what_is_the_24_point_numbering_system_")] kiedyś (do~lat 1980) numerowano pola od~1 do~12 i~przeciwne pola miały te same numery. W~celu odróżnienia pól stosowano prefiksy, eg.~`W12` lub~`B12`.
 
 == Czym różnią się krótkie i~długie nardy?
 
-Krótkie nardy to wschodnia (eg.~rosyjska) nazwa na~grę, której dotyczą niniejsze zasady. Ma ona kontrastować z~nazwą "długie nardy", czyli inną grą na~tej samej planszy. Zasady w~długie nardy opisuje angielska wikipedia#footnote[#link("https://en.wikipedia.org/wiki/Long_Nardy")]. Podstawowe różnice to zgodny ruch (obaj gracze idą w~tę samą stronę) i~pozycja początkowa z~15 pionami na~jednym polu.
+Krótkie nardy to wschodnia (eg.~rosyjska) nazwa na~grę, której dotyczą niniejsze zasady. Ma ona kontrastować z~nazwą "długie nardy", czyli inną grą na~tej samej planszy. Zasady w~długie nardy opisuje angielska wikipedia#footnote[#rawLink("https://en.wikipedia.org/wiki/Long_Nardy")]. Podstawowe różnice to zgodny ruch (obaj gracze idą w~tę samą stronę) i~pozycja początkowa z~15 pionami na~jednym polu.
 
 == Jakie zasady panują na~turniejach?
 
 #przyklej[Na~turniejach obowiązują dodatkowe zasady dotyczące używanego języka, czy przerw. Turnieje mają również swój preferowany sprzęt:]
 
 - plansza powinna być duża (w~tzw. rozmiarze turniejowym) z~dużymi pionami, czyli:
-	- 440x550-660x880 mm dla~turniejów BGWC#footnote[#link("https://www.backgammonworldchampionship.com/s/1-BGWC-2025-Tournament-Rules-A4-BW.pdf")],
-	- dostosowana do~pionów o~średnicy 37-50 mm dla~turniejów WBGF#footnote[#link("https://wbgf.info/tournament-rules/")];
+	- 440x550-660x880 mm dla~turniejów BGWC#footnote[#rawLink("https://www.backgammonworldchampionship.com/s/1-BGWC-2025-Tournament-Rules-A4-BW.pdf")],
+	- dostosowana do~pionów o~średnicy 37-50 mm dla~turniejów WBGF#footnote[#rawLink("https://wbgf.info/tournament-rules/")];
 - kubki powinny mieć wewnętrzny rant poprawiający losowość rzutu;
 - kości powinny być precyzyjne ("precision dice").
 
@@ -575,13 +577,13 @@ Wiele z~tych zasad tutaj pominięto. Przed turniejem warto sprawdzić, jakie zas
 
 == A jest dostępna jakaś bardziej wizualna forma?
 
-Jasne, turnieje, o~których wspominałem w~poprzednim pytaniu czasami można oglądać na~YouTubie, eg.~finał mistrzostw BGWC jest pod adresem #link("https://www.youtube.com/watch?v=Ow_-WNcpLKo"). Na~tego typu filmach można w~praktyce zobaczyć, jak ruszają się piony, czy też~jak używa się zegara.
+Jasne, turnieje, o~których wspominałem w~poprzednim pytaniu czasami można oglądać na~YouTubie, eg.~finał mistrzostw BGWC jest pod adresem #rawLink("https://www.youtube.com/watch?v=Ow_-WNcpLKo"). Na~tego typu filmach można w~praktyce zobaczyć, jak ruszają się piony, czy też~jak używa się zegara.
 
 = Kreditsy i uwagi końcowe
 
 Zdjęcia pochodzą z~Wikipedii i~Wikimedia Commons. Grafiki wektorowe są dziełem autora (czyli moim).
 
-Całość jest dostępna na~licencji DamjesaP 2.0 dostępnej pod adresem #link("https://github.com/damjes/damjesap"). Wszelkie uwagi, pytania, sugestie i~krytyka są mile widziane. Można się ze~mną skontaktować DMami lub~zaproponować PR w~serwisie GitHub w repozytorium #link("https://github.com/damjes/nardy-zasady")[damjes/nardy-zasady].
+Całość jest dostępna na~licencji DamjesaP 2.0 dostępnej pod adresem #rawLink("https://github.com/damjes/damjesap"). Wszelkie uwagi, pytania, sugestie i~krytyka są mile widziane. Można się ze~mną skontaktować DMami lub~zaproponować PR w~serwisie GitHub w repozytorium #link("https://github.com/damjes/nardy-zasady")[`damjes/nardy-zasady`].
 
 // --- Tył ---
 
