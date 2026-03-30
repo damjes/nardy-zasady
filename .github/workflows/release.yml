@@ -1,0 +1,63 @@
+name: Build and Release PDF
+
+on:
+  push:
+  workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xvfb wget curl libgbm1 libasound2t64
+
+
+      - name: Install draw.io
+        run: |
+          DRAWIO_VERSION=$(curl -s https://api.github.com/repos/jgraph/drawio-desktop/releases/latest \
+            | grep '"tag_name"' | sed 's/.*"v\([^"]*\)".*/\1/')
+          wget -q "https://github.com/jgraph/drawio-desktop/releases/download/v${DRAWIO_VERSION}/drawio-amd64-${DRAWIO_VERSION}.deb"
+          sudo apt-get install -y ./drawio-amd64-${DRAWIO_VERSION}.deb
+
+      - name: Install Typst
+        run: |
+          TYPST_VERSION=$(curl -s https://api.github.com/repos/typst/typst/releases/latest \
+            | grep '"tag_name"' | sed 's/.*"v\([^"]*\)".*/\1/')
+          wget -q "https://github.com/typst/typst/releases/download/v${TYPST_VERSION}/typst-x86_64-unknown-linux-musl.tar.xz"
+          tar xf typst-x86_64-unknown-linux-musl.tar.xz
+          sudo mv typst-x86_64-unknown-linux-musl/typst /usr/local/bin/
+
+      - name: Install Iosevka Term Slab Nerd Font
+        run: |
+          NERD_FONTS_VERSION=$(curl -s https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest \
+            | grep '"tag_name"' | sed 's/.*"v\([^"]*\)".*/\1/')
+          wget -q "https://github.com/ryanoasis/nerd-fonts/releases/download/v${NERD_FONTS_VERSION}/IosevkaTermSlab.tar.xz"
+          mkdir -p ~/.local/share/fonts/IosevkaTermSlab
+          tar xf IosevkaTermSlab.tar.xz -C ~/.local/share/fonts/IosevkaTermSlab
+          fc-cache -f
+
+      - name: Build PDF
+        run: xvfb-run make nardy.pdf
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v5
+        with:
+          name: nardy.pdf
+          path: nardy.pdf
+
+      - name: Create GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: nardy.pdf
+          generate_release_notes: true
