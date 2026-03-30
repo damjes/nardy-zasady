@@ -1,0 +1,5 @@
+{
+	"ignoredfiles": [
+		"obrazki/*" // są pobrane z Wikimedia Commons, więc lepiej zachować zgodność z oryginałem
+	]
+}
