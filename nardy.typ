@@ -48,7 +48,7 @@
 	#text(size: 12pt, style: "italic")[wiel. Damjes]
 ]
 
-#figure(image("obrazki/Codex_Manesse_262v_Herr_Goeli.jpg", width: 50%), placement: bottom)
+#figure(image("obrazki/Codex_Manesse_262v_Herr_Goeli.jpg", width: 75%), placement: bottom)
 
 #pagebreak(to: "odd")
 
