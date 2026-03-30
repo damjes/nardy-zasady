@@ -577,12 +577,11 @@ Wiele z~tych zasad tutaj pominięto. Przed turniejem warto sprawdzić, jakie zas
 
 Jasne, turnieje, o~których wspominałem w~poprzednim pytaniu czasami można oglądać na~YouTubie, eg.~finał mistrzostw BGWC jest pod adresem #link("https://www.youtube.com/watch?v=Ow_-WNcpLKo"). Na~tego typu filmach można w~praktyce zobaczyć, jak ruszają się piony, czy też~jak używa się zegara.
 
-= Kreditsy
+= Kreditsy i uwagi końcowe
 
-#przyklej[Zdjęcia pochodzą z~Wikipedii i~Wikimedia Commons.]
+Zdjęcia pochodzą z~Wikipedii i~Wikimedia Commons. Grafiki wektorowe są dziełem autora (czyli moim).
 
-Grafiki wektorowe są dziełem autora (czyli moim).
-
+Całość jest dostępna na~licencji DamjesaP 2.0 dostępnej pod adresem #link("https://github.com/damjes/damjesap"). Wszelkie uwagi, pytania, sugestie i~krytyka są mile widziane. Można się ze~mną skontaktować DMami lub~zaproponować PR w~serwisie GitHub w repozytorium #link("https://github.com/damjes/nardy-zasady")[damjes/nardy-zasady].
 
 // --- Tył ---
 
