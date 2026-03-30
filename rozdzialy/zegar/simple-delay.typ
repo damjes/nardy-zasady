@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 == Simple Delay <simple-delay>
 
 Simple Delay (znany też~jako US Delay) działa w~ten sposób, że~zegar odmierza ten czas jako pierwszy. Jeżeli gracz zdąży w~tym czasie wykonać ruch, nie odejmuje się czasu z~jego zegara, zaś urządzenie zaczyna odmierzać Simple Delay przeciwnikowi. Jeżeli czas Simple Delay się skończy, czas jest brany z~głównego czasu danego gracza.

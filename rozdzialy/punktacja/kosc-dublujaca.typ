@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 == Kość dublująca
 
 Kość dublującą kładzie się liczbą 64 (lub logiem) do~góry na~jednym (lewym/prawym) z~boków w~połowie planszy. Kość leżąca na~środku jest do~dyspozycji obu graczy i~oznacza wartość 1 (patrz rycina poniżej). Kość leżąca przy jednym z~graczy jest do~jego wyłącznej dyspozycji i~oznacza mnożnik stawki wskazany na~kości.

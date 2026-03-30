@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 == Punktacja Damjesa
 
 #callout_attention()[

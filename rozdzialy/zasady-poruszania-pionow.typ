@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 = Zasady poruszania się pionów
 
 Pion może stanąć na~pustym polu. Pion może stanąć na~polu zajętym przez piony gracza aktualnie wykonującego ruch. Układa się wtedy piony w~linii wzdłuż najdłuższej wysokości trójkąta (patrz choćby ustawienie początkowe na~rycinie wyżej). W~przypadku wyjścia poza rozmiar pola dopuszcza się umieszczenie pionów w~jednej linii w~przedłużeniu pola (o~ile to nie zakłóca pola naprzeciwko) lub~ułożenie piona na~innych pionach zajmujących to samo pole (patrz rycina poniżej).

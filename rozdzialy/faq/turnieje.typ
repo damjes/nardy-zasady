@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 == Jakie zasady panują na~turniejach?
 
 #przyklej[Na~turniejach obowiązują dodatkowe zasady dotyczące używanego języka, czy przerw. Turnieje mają również swój preferowany sprzęt:]

@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 == Notacja łączna
 
 Dopuszcza się zapis łączny: zapisanie wyniku rzutu kośćmi, potem postawienie dwukropka i~spacji, a~następnie zapisanie ruchu.

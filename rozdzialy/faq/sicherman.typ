@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 == Czym są te legendarne kości Sichermana? <sicherman>
 
 Kości Sichermana nie są używane w~nardach, zatem ich znajomość nie jest wymagana.

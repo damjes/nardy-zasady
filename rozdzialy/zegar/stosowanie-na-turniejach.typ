@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 == Stosowanie na~turniejach
 
 #przyklej[_Ibidem_ można też~przeczytać o~czterech podejściach do~stosowania zegarów:]

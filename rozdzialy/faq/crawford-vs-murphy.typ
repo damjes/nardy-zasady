@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 == Co jest ważniejsze: reguła Crawforda, czy reguła Murphyego?
 
 Dobre pytanie, teoretycznie może wystąpić tu problem, reguła Crawforda zabrania podwajania, a~reguła Murphyego wymusza je.

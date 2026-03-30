@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 == Reguła Hollanda
 
 #callout_attention()[

@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 == Reguła Jacobiego
 
 #callout_attention()[

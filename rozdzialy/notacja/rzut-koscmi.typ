@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 == Notacja rzutu kośćmi
 
 Przy podawaniu rzutów kośćmi podaje się najpierw niemniejszą z~wartości. Osobiście zalecam rozdzielenie liczb łącznikiem-minusem (ewentualnie dywizem lub~innym podobnym znakiem).

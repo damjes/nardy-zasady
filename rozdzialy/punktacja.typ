@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 = Punktacja
 
 W pojedynczej grze wyprowadzenie pionów przed przeciwnikiem to wygrana. Gra taka czasami jest określana grą na~pieniądze (patrz @money-game), nawet jeżeli nie stanowi rozgrywki hazardowej (sic!). Mark Driver#footnote[#rawLink("https://www.gammonvillage.com/backgammon/magazine/the_money_game.cfm")] uważa tę nazwę za~mylącą i~proponuje nazwy takie jak _gra pojedyncza_ lub~_nielimitowany mecz_.

@@ -1,3 +1,5 @@
+#import "/functions.typ": *
+
 == Reguła Murphyego
 
 #callout_attention()[
