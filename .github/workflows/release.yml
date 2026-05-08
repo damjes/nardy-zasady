@@ -39,6 +39,17 @@ jobs:
           tar xf typst-x86_64-unknown-linux-musl.tar.xz
           sudo mv typst-x86_64-unknown-linux-musl/typst /usr/local/bin/
 
+      - name: Install Libertinus Serif
+        run: |
+          LIBERTINUS_VERSION=$(curl -s https://api.github.com/repos/alerque/libertinus/releases/latest \
+            | grep '"tag_name"' | sed 's/.*"v\([^"]*\)".*/\1/')
+          wget -q "https://github.com/alerque/libertinus/releases/download/v${LIBERTINUS_VERSION}/Libertinus-${LIBERTINUS_VERSION}.tar.xz"
+          mkdir -p ~/.local/share/fonts/Libertinus
+          tar xf Libertinus-${LIBERTINUS_VERSION}.tar.xz --strip-components=2 \
+            -C ~/.local/share/fonts/Libertinus \
+            --wildcards '*/OTF/Libertinus*.otf'
+          fc-cache -f
+
       - name: Install Iosevka Term Slab Nerd Font
         run: |
           NERD_FONTS_VERSION=$(curl -s https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest \
