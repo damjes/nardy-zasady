@@ -92,6 +92,10 @@
 #pagebreak()
 
 #align(center + bottom)[
+	wersja 4.0.2, Wrocław, 8 maja 2026 r.
+
+	#v(1.5em)
+
 	copyleft #sym.copyleft 2024-2026
 
 	under DamjesaP 2.1
