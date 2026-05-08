@@ -60,13 +60,19 @@ jobs:
         run: fc-cache -f
 
       - name: Build PDF
-        run: xvfb-run make nardy.pdf
+        run: xvfb-run make nardy-a5.pdf nardy-kindle.pdf
 
-      - name: Upload artifact
+      - name: Upload artifact (A5)
         uses: actions/upload-artifact@v5
         with:
-          name: nardy.pdf
-          path: nardy.pdf
+          name: Nardy (A5)
+          path: nardy-a5.pdf
+
+      - name: Upload artifact (Kindle)
+        uses: actions/upload-artifact@v5
+        with:
+          name: Nardy (Kindle)
+          path: nardy-kindle.pdf
 
       - name: Create GitHub Release
         if: startsWith(github.ref, 'refs/tags/')
