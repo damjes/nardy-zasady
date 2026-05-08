@@ -94,7 +94,7 @@
 	]
 
 	#align(center + bottom)[
-		wersja 5.0.1, Wrocław, 9 maja 2026 r.
+		wersja 5.1.0, Wrocław, 9 maja 2026 r.
 
 		#v(1.5em)
 
