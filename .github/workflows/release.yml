@@ -48,7 +48,6 @@ jobs:
           tar xf Libertinus-${LIBERTINUS_VERSION}.tar.xz --strip-components=2 \
             -C ~/.local/share/fonts/Libertinus \
             --wildcards '*/OTF/Libertinus*.otf'
-          fc-cache -f
 
       - name: Install Iosevka Term Slab Nerd Font
         run: |
@@ -57,7 +56,9 @@ jobs:
           wget -q "https://github.com/ryanoasis/nerd-fonts/releases/download/v${NERD_FONTS_VERSION}/IosevkaTermSlab.tar.xz"
           mkdir -p ~/.local/share/fonts/IosevkaTermSlab
           tar xf IosevkaTermSlab.tar.xz -C ~/.local/share/fonts/IosevkaTermSlab
-          fc-cache -f
+
+      - name: Refresh font cache
+        run: fc-cache -f
 
       - name: Build PDF
         run: xvfb-run make nardy.pdf
