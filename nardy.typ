@@ -92,7 +92,7 @@
 #pagebreak()
 
 #align(center + bottom)[
-	wersja 4.0.3, Wrocław, 8 maja 2026 r.
+	wersja 4.0.4, Wrocław, 8 maja 2026 r.
 
 	#v(1.5em)
 
