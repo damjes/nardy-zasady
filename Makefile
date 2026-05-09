@@ -3,14 +3,17 @@
 
 all: nardy-a5.pdf nardy-kindle.pdf
 
-%.pdf: %.typ schematy.pdf
+nardy-%.pdf: nardy-%.typ schematy.pdf version.typ
 	typst compile --deps $@.d --deps-format make $< $@
 
 schematy.pdf: schematy.drawio
-	drawio schematy.drawio -xa --crop -o schematy.pdf
+	drawio $< -xa --crop -o $@
+
+version.typ: version.sh .git/HEAD .git/refs
+	./$< > $@
 
 clean:
-	rm -f *.pdf *.d
+	rm -f *.pdf *.d version.typ
 
 -include nardy-a5.pdf.d
 -include nardy-kindle.pdf.d

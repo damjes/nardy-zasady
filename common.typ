@@ -94,11 +94,15 @@
 	]
 
 	#align(center + bottom)[
-		wersja 5.1.0, Wrocław, 9 maja 2026 r.
+		#import "version.typ": *
+
+		wersja #wersja
+
+		Wrocław, #data
 
 		#v(1.5em)
 
-		copyleft #sym.copyleft 2024-2026
+		copyleft #sym.copyleft 2024-#rok
 
 		under DamjesaP 2.1
 
