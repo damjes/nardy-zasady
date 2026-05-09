@@ -35,16 +35,21 @@
 
 	#import "functions.typ": *
 
+	#let rozmiarTytulu = if czyKindle {14pt} else {26pt}
+	#let odstepPionowy = if czyKindle {0.5em} else {2em}
+
 	// ─── Strona tytułowa ───
-	#v(2em)
+	#v(odstepPionowy)
 	#align(center)[
 		#set par(justify: false)
-		#text(size: 26pt, weight: "bold", hyphenate: false)[Oficjalne Damjesowe zasady gry w~nardy]
+		#text(size: rozmiarTytulu, weight: "bold", hyphenate: false)[Oficjalne Damjesowe zasady gry w~nardy]
 		#v(0.2em)
 		*(znane też~jako backgammon, tryktrak, tabla, tavli, tavla...)*
 		#v(0.6em)
 		#text(size: 12pt, style: "italic")[wiel. Damjes]
 	]
+
+	#v(odstepPionowy)
 
 	#block(height: 1fr)[
 		#image("obrazki/Codex_Manesse_262v_Herr_Goeli.jpg", width: 100%, height: 100%, fit: "contain")
