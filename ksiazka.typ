@@ -101,7 +101,7 @@
 	]
 
 	#align(center + bottom)[
-		#import "tmp/version.typ": *
+		#import "tmp/wersja.typ": *
 
 		Format: #format
 

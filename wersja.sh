@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo -n '#let wersja = "'
-./gitVersion.sh
+./gitWersja.sh
 echo '"'
 
 echo -n '#let data = "'
