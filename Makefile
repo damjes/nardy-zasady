@@ -7,17 +7,23 @@ DEPS = $(FORMATS:%=tmp/deps-%.d)
 
 all: $(PDFS)
 
-pdf/nardy-%.pdf: formaty/%.typ tmp/schematy.pdf tmp/wersja.typ
+pdf/nardy-%.pdf: formaty/%.typ tmp/schematy.pdf tmp/wersja.typ pdf
 	typst compile --root . --deps tmp/deps-$*.d --deps-format make $< $@
 
-tmp/schematy.pdf: schematy.drawio
+tmp/schematy.pdf: schematy.drawio tmp
 	drawio $< -xa --crop -o $@
 
-tmp/wersja.typ: wersja.sh .git/HEAD .git/refs/*/*
+tmp/wersja.typ: wersja.sh .git/HEAD .git/refs/*/* tmp
 	./$< > $@
 
+pdf:
+	mkdir -p $@
+
+tmp:
+	mkdir -p $@
+
 clean:
-	rm -f pdf/* tmp/*
+	rm -rf pdf tmp
 
 rebuild: clean all
 
