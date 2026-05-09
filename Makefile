@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := all
-.PHONY: all clean
+.PHONY: all clean rebuild
 
 FORMATS = a4 a5 a6 b5 kindle letter ukbookb usdigest ustrade
 PDFS = $(FORMATS:%=pdf/nardy-%.pdf)
@@ -18,5 +18,7 @@ tmp/version.typ: version.sh .git/HEAD .git/refs/*/*
 
 clean:
 	rm -f pdf/* tmp/*
+
+rebuild: clean all
 
 -include $(DEPS)
