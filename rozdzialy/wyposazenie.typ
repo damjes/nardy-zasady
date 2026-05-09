@@ -14,7 +14,7 @@ Na~pierwszej rycinie jest widoczny zestaw do~gry w~nardy, gotowy do~rozpoczęcia
 
 #przyklej[Oprócz tego, w~zestawach zwykle znajdują się:]
 
-- kość dublująca – zwykle większa kość, na~ściankach są kolejne potęgi dwójki: 2, 4, 8, 16, 32, 64, czasami zamiast 64 jest logo producenta, czasami kość dublująca jest pudełkiem na~kostki do~rzucania, na~rycinie powyżej czerwona kość po~lewej stronie z~liczbą 64;
+- kość dublująca – zwykle większa kość, na~ściankach są kolejne potęgi dwójki: `2`, `4`, `8`, `16`, `32`, `64`, czasami zamiast `64` jest logo producenta, czasami kość dublująca jest pudełkiem na~kostki do~rzucania, na~rycinie powyżej czerwona kość po~lewej stronie z~liczbą `64`;
 - druga para kości K6 w~innym kolorze (na~rycinie powyżej widać obie pary: dwie kostki czerwone i~dwie białe);
 - kubki do~rzucania kostkami (na~rycinie powyżej są dwa, przypominają spłaszczone walce).
 

@@ -6,11 +6,11 @@ Pion może stanąć na~pustym polu. Pion może stanąć na~polu zajętym przez p
 
 #figure(image("../schematy.pdf", page: 6, width: 80%))
 
-#block(breakable: false)[
+#przyklej()[
 	Pion może stanąć na~polu zajętym przez przeciwnika tylko wtedy, kiedy pion przeciwnika stoi samotnie. W~takim przypadku pion przeciwnika zostaje zbity i~odłożony na~bandę. Na~rycinach poniżej widać sytuację przed biciem i~po.
-
-	#figure(image("../schematy.pdf", page: 4, width: 70%))
 ]
+
+#figure(image("../schematy.pdf", page: 4, width: 70%))
 
 #figure(image("../schematy.pdf", page: 5, width: 70%))
 
