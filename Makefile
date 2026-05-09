@@ -1,7 +1,11 @@
 .DEFAULT_GOAL := all
 .PHONY: all clean
 
-all: nardy-a5.pdf nardy-kindle.pdf
+FORMATS = a4 a5 a6 b5 kindle letter
+PDFS = $(FORMATS:%=nardy-%.pdf)
+DEPS = $(FORMATS:%=nardy-%.pdf.d)
+
+all: $(PDFS)
 
 nardy-%.pdf: nardy-%.typ schematy.pdf version.typ
 	typst compile --deps $@.d --deps-format make $< $@
@@ -15,5 +19,4 @@ version.typ: version.sh .git/HEAD .git/refs/*/*
 clean:
 	rm -f *.pdf *.d version.typ
 
--include nardy-a5.pdf.d
--include nardy-kindle.pdf.d
+-include $(DEPS)
