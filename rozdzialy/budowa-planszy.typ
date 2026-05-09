@@ -8,7 +8,7 @@
 
 Ułożenie początkowe, kierunki ruchów obu graczy i~numerację pól dla~gracza żółtego przedstawia poniższa rycina:
 
-#figure(image("../schematy.pdf", page: 1, width: 100%))
+#figure(image("../tmp/schematy.pdf", page: 1, width: 100%))
 
 Przez środek planszy przebiega banda. To zwykle tam znajdują się zawiasy, jeżeli plansza jest składaną walizką. Bandę układa się wzdłuż linii łączącej graczy. Po~jednej stronie bandy (dowolnie wybranej) znajdują się domy graczy i~dwór, zaś po~drugiej podwórza (patrz rycina powyżej).
 

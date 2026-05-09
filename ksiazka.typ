@@ -1,4 +1,4 @@
-#let common(doNieparzystejStrony, format, czyKindle) = [ 
+#let ksiazka(doNieparzystejStrony, format, czyKindle) = [ 
 	#set document(
 		title: "Oficjalne Damjesowe zasady gry w nardy",
 		author: "wiel. Damjes",
@@ -101,7 +101,7 @@
 	]
 
 	#align(center + bottom)[
-		#import "version.typ": *
+		#import "tmp/version.typ": *
 
 		Format: #format
 
