@@ -9,7 +9,7 @@ nardy-%.pdf: nardy-%.typ schematy.pdf version.typ
 schematy.pdf: schematy.drawio
 	drawio $< -xa --crop -o $@
 
-version.typ: version.sh .git/HEAD .git/refs/heads/master
+version.typ: version.sh .git/HEAD .git/refs/*/*
 	./$< > $@
 
 clean:
