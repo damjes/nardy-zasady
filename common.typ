@@ -58,9 +58,11 @@
 	#doNieparzystejStrony()
 
 	// --- Treść dokumentu ---
-	#set page(numbering: "1")
+	#if not czyKindle {
+			outline()
+	}
 
-	#outline()
+	#set page(numbering: if not czyKindle { "1" } else { none })
 
 	#doNieparzystejStrony()
 

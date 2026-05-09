@@ -6,4 +6,4 @@
 	margin: (x: 5mm, y: 8mm)
 )
 
-#common(() => pagebreak(), true)
+#common(() => pagebreak(weak: true), true)
