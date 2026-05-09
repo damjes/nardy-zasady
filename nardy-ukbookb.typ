@@ -4,4 +4,4 @@
 	paper: "uk-book-b",
 )
 
-#common(() => pagebreak(to: "odd"), false)
+#common(() => pagebreak(to: "odd"), "UK Book B", false)

@@ -4,4 +4,4 @@
 	paper: "iso-b5"
 )
 
-#common(() => pagebreak(to: "odd"), false)
+#common(() => pagebreak(to: "odd"), "ISO B5", false)

@@ -4,4 +4,4 @@
 	paper: "us-trade"
 )
 
-#common(() => pagebreak(to: "odd"), false)
+#common(() => pagebreak(to: "odd"), "US Trade", false)

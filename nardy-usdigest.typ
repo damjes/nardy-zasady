@@ -4,4 +4,4 @@
 	paper: "us-digest"
 )
 
-#common(() => pagebreak(to: "odd"), false)
+#common(() => pagebreak(to: "odd"), "US Digest", false)

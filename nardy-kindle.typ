@@ -6,4 +6,4 @@
 	margin: (x: 5mm, y: 8mm)
 )
 
-#common(() => pagebreak(weak: true), true)
+#common(() => pagebreak(weak: true), "Amazon Kindle (90mm x 120mm)", true)
