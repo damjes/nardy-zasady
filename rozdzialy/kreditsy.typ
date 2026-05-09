@@ -1,7 +1,15 @@
 #import "/functions.typ": *
 
+#let mail = {
+	let username = "git"
+	let domain = "damj.es"
+	let mail = username + "@" + domain
+	let mailto = "mailto:" + mail
+	link(mailto, raw(mail))
+}
+
 = Kreditsy i uwagi końcowe
 
-Zdjęcia pochodzą z~Wikipedii i~Wikimedia Commons. Grafiki wektorowe są dziełem autora (czyli moim).
+Zdjęcia pochodzą z~Wikipedii i~Wikimedia Commons. Grafiki wektorowe są dziełem autora (czyli moïm).
 
-Całość jest dostępna na~licencji DamjesaP 2.1 dostępnej pod adresem #rawLink("https://github.com/damjes/damjesap"). Wszelkie uwagi, pytania, sugestie i~krytyka są mile widziane. Można się ze~mną skontaktować DMami lub~zaproponować PR w~serwisie GitHub w repozytorium #link("https://github.com/damjes/nardy-zasady")[`damjes/nardy-zasady`].
+Całość jest dostępna na~licencji DamjesaP 2.1 dostępnej pod adresem #rawLink("https://github.com/damjes/damjesap"). Wszelkie uwagi, pytania, sugestie i~krytyka są mile widziane. Można się ze~mną skontaktować wysyłając maila na~adres #mail lub~zaproponować PR w~serwisie GitHub w~repozytorium #link("https://github.com/damjes/nardy-zasady")[`damjes/nardy-zasady`].
