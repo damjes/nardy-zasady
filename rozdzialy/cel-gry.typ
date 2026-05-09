@@ -1,4 +1,4 @@
-#import "/functions.typ": *
+#import "/funkcje.typ": *
 
 = Cel gry
 

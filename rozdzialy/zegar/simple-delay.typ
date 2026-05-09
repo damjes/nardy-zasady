@@ -1,4 +1,4 @@
-#import "/functions.typ": *
+#import "/funkcje.typ": *
 
 == Simple Delay <simple-delay>
 

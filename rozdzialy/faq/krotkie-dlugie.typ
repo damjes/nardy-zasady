@@ -1,4 +1,4 @@
-#import "/functions.typ": *
+#import "/funkcje.typ": *
 
 == Czym różnią się krótkie i~długie nardy?
 

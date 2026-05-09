@@ -1,4 +1,4 @@
-#import "/functions.typ": *
+#import "/funkcje.typ": *
 
 #let mail = {
 	let username = "git"

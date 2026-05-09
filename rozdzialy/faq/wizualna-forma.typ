@@ -1,4 +1,4 @@
-#import "/functions.typ": *
+#import "/funkcje.typ": *
 
 == A jest dostępna jakaś bardziej wizualna forma?
 

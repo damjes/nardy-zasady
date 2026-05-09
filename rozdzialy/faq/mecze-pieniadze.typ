@@ -1,4 +1,4 @@
-#import "/functions.typ": *
+#import "/funkcje.typ": *
 
 == O~co chodzi z~meczami i~grą na~pieniądze? <money-game>
 

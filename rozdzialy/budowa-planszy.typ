@@ -1,4 +1,4 @@
-#import "/functions.typ": *
+#import "/funkcje.typ": *
 
 = Budowa planszy i~kierunek ruchu
 

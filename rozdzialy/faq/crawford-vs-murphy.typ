@@ -1,4 +1,4 @@
-#import "/functions.typ": *
+#import "/funkcje.typ": *
 
 == Co jest ważniejsze: reguła Crawforda, czy reguła Murphyego?
 

@@ -33,7 +33,7 @@
 		link(el.location(), numbering(el.numbering, ..counter(heading).at(el.location())) + " " + el.body)
 	}
 
-	#import "functions.typ": *
+	#import "funkcje.typ": *
 
 	#let rozmiarTytulu = if czyKindle {14pt} else {26pt}
 	#let odstepPionowy = if czyKindle {0.5em} else {2em}

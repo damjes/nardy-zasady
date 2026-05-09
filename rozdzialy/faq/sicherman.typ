@@ -1,4 +1,4 @@
-#import "/functions.typ": *
+#import "/funkcje.typ": *
 
 == Czym są te legendarne kości Sichermana? <sicherman>
 
