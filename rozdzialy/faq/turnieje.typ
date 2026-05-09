@@ -7,10 +7,10 @@
 - plansza powinna być duża (w~tzw. rozmiarze turniejowym) z~dużymi pionami, czyli:
 	- 440x550-660x880 mm dla~turniejów BGWC#footnote[#rawLink("https://www.backgammonworldchampionship.com/s/1-BGWC-2025-Tournament-Rules-A4-BW.pdf")],
 	- dostosowana do~pionów o~średnicy 37-50 mm dla~turniejów WBGF#footnote[#rawLink("https://wbgf.info/tournament-rules/")];
-- kubki powinny mieć wewnętrzny rant poprawiający losowość rzutu;
-- kości powinny być precyzyjne ("precision dice").
+- kubki powinny mieć wewnętrzny rant (tzw.~_lip_) poprawiający losowość rzutu;
+- kości powinny być precyzyjne (_precision dice_).
 
-#przyklej[Dodatkowo określa się różne przepisy dotyczące sytuacji spornych i~wątpliwych, jak eg.~czy w~sytuacjach awaryjnych graczowi przysługuje dodatkowa przerwa. Opisuje się też~zasady związane z~uczciwą rozgrywką, takie jak:]
+#przyklej[Dodatkowo określa się różne przepisy dotyczące sytuäcji spornych i~wątpliwych, jak eg.~czy w~sytuäcjach awaryjnych graczowi przysługuje dodatkowa przerwa. Opisuje się też~zasady związane z~uczciwą rozgrywką, takie jak:]
 
 - zegar i~piony obsługujemy tą samą ręką,
 - kiedy można używać jakiego sprzętu elektronicznego (zapobieganie dopingowi elektronicznemu).
