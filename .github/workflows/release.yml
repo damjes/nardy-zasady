@@ -63,7 +63,7 @@ jobs:
         run: sudo locale-gen pl_PL.UTF-8
 
       - name: Build PDF
-        run: xvfb-run make nardy-a5.pdf nardy-kindle.pdf
+        run: xvfb-run make
       
       - name: Get version from git
         id: get_version
@@ -77,6 +77,13 @@ jobs:
         with:
           name: "Wersja ${{ steps.get_version.outputs.version }}"
           files: |
+            nardy-a4.pdf
             nardy-a5.pdf
+            nardy-a6.pdf
+            nardy-b5.pdf
             nardy-kindle.pdf
+            nardy-letter.pdf
+            nardy-ukbookb.pdf
+            nardy-usdigest.pdf
+            nardy-ustrade.pdf
           generate_release_notes: true
