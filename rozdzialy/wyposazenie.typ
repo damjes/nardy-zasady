@@ -23,7 +23,7 @@ Czasami (zwłaszcza na~turniejach) używa się tzw. kości precyzyjnych. Są to 
 #przyklej[W czasie gry można także wykorzystywać inne akcesoria, w~tym:]
 
 - specjalny podwójny zegar do~odmierzania czasu na~ruch gracza (patrz sekcja @zegar);
-- wieżę do~rzucania kośćmi: kości wrzuca się od~góry, następnie turlają się one po~wewnętrznych przeszkodach i~wypadają u~dołu, zastępuje to użycie kubków (na~pierwszej rycinie poniżej widoczna jest wykonana w~IV wieku wieża Vettweiss-Froitzheim ze~zbiorów Reńskiego Muzeum Narodowego w~Bonn);
+- wieżę do~rzucania kośćmi: kości wrzuca się od~góry, następnie turlają się one po~wewnętrznych przeszkodach i~wypadają u~dołu, zastępuje to użycie kubków (na~pierwszej rycinie poniżej widoczna jest wykonana w~IV wieku wieża Vettweiss-Froitzheim ze~zbiorów Reńskiego Muzeüm Narodowego w~Bonn);
 - planszę do~liczenia punktów w~czasie meczu (patrz druga rycina poniżej, plansza do~punktów znajduje się za~planszą do~gry i~wskazuje wynik 1:1 i~grę do~7).
 
 #obrazek("obrazki/Vettweiss-Froitzheim_Dice_Tower.jpg", image-width: 70%, margin: 0.2em)

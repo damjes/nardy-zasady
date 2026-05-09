@@ -3,7 +3,7 @@
 = Budowa planszy i~kierunek ruchu
 
 #callout_tldr()[
-	Gracze poruszają się od~pola z~dwoma swoimi pionami (w~położeniu początkowym), zgodnie z~ryciną poniżej.
+	Gracze poruszają się od~pola z~dwoma swoïmi pionami (w~położeniu początkowym), zgodnie z~ryciną poniżej.
 ]
 
 Ułożenie początkowe, kierunki ruchów obu graczy i~numerację pól dla~gracza żółtego przedstawia poniższa rycina:
