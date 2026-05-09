@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := all
 .PHONY: all clean
 
-FORMATS = a4 a5 a6 b5 kindle letter
+FORMATS = a4 a5 a6 b5 kindle letter ukbookb usdigest ustrade
 PDFS = $(FORMATS:%=nardy-%.pdf)
 DEPS = $(FORMATS:%=nardy-%.pdf.d)
 
