@@ -75,6 +75,6 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v3
         with:
-          name: "Wersja ${{ steps.get_version.outputs.wersja }}"
+          name: "Wersja ${{ steps.pobierz_wersje.outputs.wersja }}"
           files: pdf/nardy-*.pdf
           generate_release_notes: true
