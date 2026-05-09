@@ -2,7 +2,7 @@
 
 == Punktacja Damjesa
 
-#callout_attention()[
+#uwaga()[
 	Ta zasada została wymyślona przeze mnie i~nie jest powszechnie znana, niemniej wydaje mi się pożądana i~jestem ciekawy opinii.
 ]
 
@@ -14,7 +14,7 @@
 
 Z~góry ustalona liczba punktów powinna być dużo wyższa (eg.~135 punktów – dziewięciokrotność 15 punktów). Kość dublująca podwaja punktację normalnie.
 
-#callout_example()[
+#przyklad()[
 	Jeżeli strona przegrana ma dwa piony na~polu `1` i~jeden pion na~polu `2` (czyli wszystkie piony w~swoïm domu), to oznacza to trzy brakujące piony, a~zatem trzy punkty wygranej dla~zwycięzcy.
 
 	Jeżeli strona przegrana ma dwa piony na~polu `1` i~jeden pion na~polu `8` (czyli jeden pion poza domem), oznacza to 30 punktów.

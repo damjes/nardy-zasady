@@ -2,7 +2,7 @@
 
 = Budowa planszy i~kierunek ruchu
 
-#callout_tldr()[
+#tldr()[
 	Gracze poruszają się od~pola z~dwoma swoïmi pionami (w~położeniu początkowym), zgodnie z~ryciną poniżej.
 ]
 

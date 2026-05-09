@@ -2,7 +2,7 @@
 
 == Reguła Jacobiego
 
-#callout_attention()[
+#uwaga()[
 	Zwykle stosuje się tę zasadę tylko do~gry na~pieniądze, ale~gracze mogą postanowić inaczej.
 ]
 

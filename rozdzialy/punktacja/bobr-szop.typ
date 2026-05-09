@@ -2,7 +2,7 @@
 
 == Bóbr, szop i inne zwierzątka
 
-#callout_attention()[
+#uwaga()[
 	Zwykle stosuje się te zasady rzadko i~tylko do~gry na~pieniądze, ale~gracze mogą postanowić inaczej.
 ]
 

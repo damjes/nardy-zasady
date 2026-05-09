@@ -2,7 +2,7 @@
 
 == Reguła Hollanda
 
-#callout_attention()[
+#uwaga()[
 	Obecnie nie stosuje się tej zasady, ale~gracze mogą postanowić inaczej.
 ]
 

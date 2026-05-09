@@ -8,13 +8,13 @@ Kość dublującą kładzie się liczbą `64` (lub~logiem) do~góry na~jednym (l
 
 Wartość kości dublującej stanowi mnożnik punktów.
 
-#callout_example()[
+#przyklad()[
 	Kość dublująca wskazująca	`4` i~backgammon oznaczają 12 punktów.
 ]
 
 Gracz, który ma kość do~dyspozycji, może, przed wykonaniem rzutu, sięgnąć po~kość, podwoić wskazywaną wartość (odpowiednio obracając kość) i~wręczyć ją przeciwnikowi. Jeżeli przeciwnik przyjmie kość, ta zostaje do~jego wyłącznej dyspozycji (do~czasu kolejnego podwojenia), zaś stawka ulega podwojeniu. Jeżeli przeciwnik odmówi przyjęcia kości, gra zostaje przerwana, a~przeciwnik przegrywa jednym punktem pomnożonym przez wartość wskazywaną przez kość sprzed ostatniego zwiększenia.
 
-#callout_example()[
+#przyklad()[
 	Przeciwnik ma kość wskazującą `4`. Kładzie on przed graczem kość z~wartością `8` (patrz rycina poniżej). Gracz może kość odrzucić i~natychmiast przegrać czterema punktami lub~kość przyjąć, mieć ją do~dyspozycji i~zgodzić się na~kolejne podwojenie stawki.
 
 	#figure(image("../../tmp/schematy.pdf", page: 12, width: 60%))

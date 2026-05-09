@@ -2,7 +2,7 @@
 
 == Reguła Crawforda
 
-#callout_attention()[
+#uwaga()[
 	Zwykle stosuje się tę zasadę w~meczach, ale~gracze mogą postanowić inaczej.
 ]
 

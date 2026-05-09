@@ -2,7 +2,7 @@
 
 == Reguła Murphyego
 
-#callout_attention()[
+#uwaga()[
 	Obecnie nie stosuje się tej zasady (a~jeśli się stosuje, to tylko w~grach na~pieniądze), ale~gracze mogą postanowić inaczej.
 ]
 

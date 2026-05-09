@@ -4,7 +4,7 @@
 
 Możliwości ruchu w~grze wyznaczane są przez rzut kośćmi. Gracze rzucają na~początku swojej tury dwiema kośćmi. Każda kość oznacza o~ile można przesunąć pojedynczego piona. W~wypadku wyrzucenia dubletu (ie.~tej samej wartości na~obu kościach) rzut ulega podwojeniu.
 
-#callout_example()[
+#przyklad()[
 	Jeżeli gracz wyrzuca `5-2`, to nie ma podwojenia.
 
 	Jeżeli gracz wyrzuca `5-5`, to dwa ruchy o~5 zostają podwojone do~czterech ruchów o~5. Zatem wyrzucenie danej wartości dwukrotnie w~ramach jednego rzutu oznacza cztery ruchy o~tę wartość.
@@ -16,7 +16,7 @@ Wyjątek stanowi pierwsza tura. Każdy z~graczy wykonuje wtedy rzut jedną kośc
 
 Można przesunąć tego samego piona wielokrotnie, o~ile robi się to etapami.
 
-#callout_example()[
+#przyklad()[
 	#przyklej[Pion jest na~polu `22`, gracz chce go przesunąć na~pole `14`, na~kościach wypadło `5-3`:]
 
 	- gracz może wykonać ruch o~3 (o~ile może stanąć na~polu `19`), a~następnie stanąć na~polu `14` (również w~miarę możliwości);
@@ -30,7 +30,7 @@ Gracz ma obowiązek najpierw wprowadzić wszystkie zbite piony. Kolejka gracza k
 
 Przy grze z~zegarem, jeżeli wiadomo jest, że~ruch jest niemożliwy, gracz powinien po~prostu zakończyć turę naciskając zegar, chociaż ci, którzy lubią życie na~krawędzi, mogą użyć kości dublującej. Obsługa zegara jest istotna, ponieważ pozwala ona na~poprawne odliczanie czasu w~przypadku stosowania systemów Simple Delay czy też Fischera (patrz sekcja @simple-delay i dalsze).
 
-#callout_example()[
+#przyklad()[
 	Jeżeli gracz wyrzuci `3`, to może wejść na~planszę i~poruszyć się o~trzy pola, ie.~wejść na~pole `22` (o~ile może na~nim stanąć).
 ]
 
@@ -40,7 +40,7 @@ Gracz ma obowiązek wykonać wszystkie ruchy, a~jeżeli nie jest to możliwe, to
 
 Gracz może (po~spełnieniu warunków) wyprowadzić piona na~dwór wtedy, kiedy dystans do~końca planszy (czyli numer pola) odpowiada wyrzuconej wartości. W~przypadku braku możliwości ruchu, spowodowanego tym, że~piony stoją za~blisko końca planszy, dopuszcza się wyprowadzenie na~dwór piona najdalszego.
 
-#callout_example()[
+#przyklad()[
 	Gracz ma tylko po~trzy piony na~polach `1` i~`2` i~wyrzuca `5-5`. Nie może wyprowadzić piona z~pustego pola `5` ani nie może przesunąć pionów o~`5`, zatem dokonuje wyprowadzenia czterech pionów – trzech z~pola `2` i~jednego z~pola `1`. Jest to jedyny legalny ruch (patrz rycina).
 	#figure(image("../tmp/schematy.pdf", page: 10, width: 80%))
 ]

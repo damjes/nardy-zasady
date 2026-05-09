@@ -6,7 +6,7 @@ W przypadku gry z~zegarem zaleca się użycie tego samego zestawu dwóch kości 
 
 Przekazanie oraz~przyjęcie kości dublującej wymagają uruchomienia czasu przeciwnika przez naciśnięcie przycisku na~zegarze (o~ile używa się zegara).
 
-#callout_example()[
+#przyklad()[
 
 #przyklej[Jeżeli gracz chce użyć kości dublującej, a~przeciwnik się na~to godzi, to:]
 
