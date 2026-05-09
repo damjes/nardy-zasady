@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo -n '#let wersja = "'
-git describe --tags --always --dirty | sed 's/^v\.//' | tr -d '\n'
+./gitVersion.sh
 echo '"'
 
 echo -n '#let data = "'
