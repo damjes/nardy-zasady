@@ -6,7 +6,7 @@ Dokument powstał z potrzeby — brakowało kompletnego, pisemnego opisu zasad p
 
 ## Pobieranie
 
-Gotowy PDF jest dostępny w zakładce [Releases](../../releases/latest).
+Gotowe PDFy w różnych formatach (A4..6, B5, Letter, ...) dostępne są w zakładce [Releases](../../releases/latest).
 
 ## Wymagania
 
