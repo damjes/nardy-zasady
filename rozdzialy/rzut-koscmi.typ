@@ -32,9 +32,9 @@ Przy grze z~zegarem, jeżeli wiadomo jest, że~ruch jest niemożliwy, gracz powi
 
 #przyklad()[
 	Jeżeli gracz wyrzuci `3`, to może wejść na~planszę i~poruszyć się o~trzy pola, i.e.~wejść na~pole `22` (o~ile może na~nim stanąć).
-]
 
-#figure(image("../tmp/schematy.pdf", page: 9, width: 100%))
+	#figure(image("../tmp/schematy.pdf", page: 9, width: 100%))
+]
 
 Gracz ma obowiązek wykonać wszystkie ruchy, a~jeżeli nie jest to możliwe, to najwięcej ruchów, ile jest możliwe. W~przypadku możliwości ruchu jedną albo drugą kością należy wybrać wyższy wynik rzutu. Jeżeli ruch wartością z~jednej kości jest niemożliwy, ale~stanie się możliwy po~odpowiednim ruchu wartością z~drugiej kości, taki ruch z~drugiej kości staje się obowiązkowy. Pogorszenie sytuäcji na~planszy nie stanowi usprawiedliwienia#footnote[sytuäcję _zugzwangu_ omówiono w~sekcji @zugzwang]. Niemożliwe do~wykonania ruchy przepadają.
 
@@ -42,6 +42,7 @@ Gracz może (po~spełnieniu warunków) wyprowadzić piona na~dwór wtedy, kiedy 
 
 #przyklad()[
 	Gracz ma tylko po~trzy piony na~polach `1` i~`2` i~wyrzuca `5-5`. Nie może wyprowadzić piona z~pustego pola `5` ani nie może przesunąć pionów o~`5`, zatem dokonuje wyprowadzenia czterech pionów – trzech z~pola `2` i~jednego z~pola `1`. Jest to jedyny legalny ruch (patrz rycina).
+
 	#figure(image("../tmp/schematy.pdf", page: 10, width: 80%))
 ]
 
