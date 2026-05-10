@@ -21,7 +21,9 @@ define(`DELTA_X', `0')
 define(`DELTA_Y', `ROZMIAR_PIONA')
 
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="600">
-	<link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="plansza.css" type="text/css" />
+	<style>
+		include(`plansza.css')
+	</style>
 	PION(a)
 	PION(b)
 </svg>
