@@ -12,13 +12,13 @@ define(`GOTO', `
 define(`PION', `
 	<circle class="pion-$1" cx="POZ_X" cy="POZ_Y" r="eval((ROZMIAR_PIONA-OBRAMOWANIE_PIONA)/2)" stroke-width="OBRAMOWANIE_PIONA" />
 	<circle class="pion-$1 fingerdish" cx="POZ_X" cy="POZ_Y" r="eval(ROZMIAR_FINGERDISH/2)" />
-	GOTO(DELTA_X, DELTA_Y)
+	GOTO(PION_DELTA_X, PION_DELTA_Y)
 ')
 
 define(`POZ_X', `150')
 define(`POZ_Y', `150')
-define(`DELTA_X', `0')
-define(`DELTA_Y', `ROZMIAR_PIONA')
+define(`PION_DELTA_X', `0')
+define(`PION_DELTA_Y', `ROZMIAR_PIONA')
 
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="600">
 	<style>
