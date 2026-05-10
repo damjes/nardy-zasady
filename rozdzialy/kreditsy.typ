@@ -8,7 +8,7 @@
 	link(mailto, raw(mail))
 }
 
-= Kreditsy i uwagi końcowe
+= Źródła i uwagi końcowe
 
 Zdjęcia pochodzą z~Wikipedii i~Wikimedia Commons. Grafiki wektorowe są dziełem autora (czyli moïm).
 
