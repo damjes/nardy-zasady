@@ -10,8 +10,8 @@ define(`GOTO', `
 ')
 
 define(`PION', `
-	<circle class="pion-$1" cx="POZ_X" cy="POZ_Y" r="eval((ROZMIAR_PIONA-OBRAMOWANIE_PIONA)/2)" stroke-width="OBRAMOWANIE_PIONA" />
-	<circle class="pion-$1 fingerdish" cx="POZ_X" cy="POZ_Y" r="eval(ROZMIAR_FINGERDISH/2)" />
+	<circle class="pion-$1" cx="eval(POZ_X + ROZMIAR_PIONA/2)" cy="eval(POZ_Y)" r="eval((ROZMIAR_PIONA-OBRAMOWANIE_PIONA)/2)" stroke-width="OBRAMOWANIE_PIONA" />
+	<circle class="pion-$1 fingerdish" cx="eval(POZ_X + ROZMIAR_PIONA/2)" cy="eval(POZ_Y)" r="eval(ROZMIAR_FINGERDISH/2)" />
 	GOTO(PION_DELTA_X, PION_DELTA_Y)
 ')
 
