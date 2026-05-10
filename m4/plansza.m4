@@ -10,12 +10,12 @@ define(`GOTO', `
 ')
 
 define(`PION', `
-	<circle cx="POZ_X" cy="POZ_Y" r="eval((ROZMIAR_PIONA-OBRAMOWANIE_PIONA)/2)" fill="$1" stroke="$2" stroke-width="OBRAMOWANIE_PIONA" />
-	<circle cx="POZ_X" cy="POZ_Y" r="eval(ROZMIAR_FINGERDISH/2)" fill="$3" />
+	<circle class="$1" cx="POZ_X" cy="POZ_Y" r="eval((ROZMIAR_PIONA-OBRAMOWANIE_PIONA)/2)" stroke-width="OBRAMOWANIE_PIONA" />
+	<circle class="$1 fingerdish" cx="POZ_X" cy="POZ_Y" r="eval(ROZMIAR_FINGERDISH/2)" />
 	GOTO(DELTA_X, DELTA_Y)
 ')
-define(`PION_A', `PION(`hsl( 45, 100%, 90%)', `hsl( 45,  60%, 60%)', `hsl( 45,  60%, 75%)')')
-define(`PION_B', `PION(`hsl(  5, 100%, 45%)', `hsl(  5, 100%, 35%)', `hsl(  5, 100%, 30%)')')
+define(`PION_A', `PION(`pion-a')')
+define(`PION_B', `PION(`pion-b')')
 
 define(`POZ_X', `150')
 define(`POZ_Y', `150')
@@ -23,6 +23,7 @@ define(`DELTA_X', `0')
 define(`DELTA_Y', `ROZMIAR_PIONA')
 
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="600">
+	<link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="plansza.css" type="text/css" />
 	PION_A
 	PION_B
 </svg>

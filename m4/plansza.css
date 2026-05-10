@@ -1,0 +1,19 @@
+.pion-a {
+	fill:   hsl( 45, 100%, 90%);
+	stroke: hsl( 45,  60%, 60%);
+}
+.pion-a.fingerdish {
+	fill:   hsl( 45,  60%, 75%);
+}
+
+.pion-b {
+	fill:   hsl(  5, 100%, 45%);
+	stroke: hsl(  5, 100%, 35%);
+}
+.pion-b.fingerdish {
+	fill:   hsl(  5, 100%, 40%);
+}
+
+.fingerdish {
+	stroke: none;
+}
