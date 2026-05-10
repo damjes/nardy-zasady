@@ -10,7 +10,7 @@
 - kubki powinny mieć wewnętrzny rant (tzw.~_lip_) poprawiający losowość rzutu;
 - kości powinny być precyzyjne (_precision dice_).
 
-#przyklej[Dodatkowo określa się różne przepisy dotyczące sytuäcji spornych i~wątpliwych, jak eg.~czy w~sytuäcjach awaryjnych graczowi przysługuje dodatkowa przerwa. Opisuje się też~zasady związane z~uczciwą rozgrywką, takie jak:]
+#przyklej[Dodatkowo określa się różne przepisy dotyczące sytuäcji spornych i~wątpliwych, jak e.g.~czy w~sytuäcjach awaryjnych graczowi przysługuje dodatkowa przerwa. Opisuje się też~zasady związane z~uczciwą rozgrywką, takie jak:]
 
 - zegar i~piony obsługujemy tą samą ręką,
 - kiedy można używać jakiego sprzętu elektronicznego (zapobieganie dopingowi elektronicznemu).

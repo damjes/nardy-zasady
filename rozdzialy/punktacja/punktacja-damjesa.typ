@@ -12,7 +12,7 @@
 - gammon inny, niż w/w jest wart 30 punktów (dwukrotność 15 punktów, czyli maksymalnej wygranej zwykłej);
 - backgammon jest wart 45 punktów (trzykrotność 15 punktów).
 
-Z~góry ustalona liczba punktów powinna być dużo wyższa (eg.~135 punktów – dziewięciokrotność 15 punktów). Kość dublująca podwaja punktację normalnie.
+Z~góry ustalona liczba punktów powinna być dużo wyższa (e.g.~135 punktów – dziewięciokrotność 15 punktów). Kość dublująca podwaja punktację normalnie.
 
 #przyklad()[
 	Jeżeli strona przegrana ma dwa piony na~polu `1` i~jeden pion na~polu `2` (czyli wszystkie piony w~swoïm domu), to oznacza to trzy brakujące piony, a~zatem trzy punkty wygranej dla~zwycięzcy.

@@ -2,7 +2,7 @@
 
 = Rzut kośćmi
 
-Możliwości ruchu w~grze wyznaczane są przez rzut kośćmi. Gracze rzucają na~początku swojej tury dwiema kośćmi. Każda kość oznacza o~ile można przesunąć pojedynczego piona. W~wypadku wyrzucenia dubletu (ie.~tej samej wartości na~obu kościach) rzut ulega podwojeniu.
+Możliwości ruchu w~grze wyznaczane są przez rzut kośćmi. Gracze rzucają na~początku swojej tury dwiema kośćmi. Każda kość oznacza o~ile można przesunąć pojedynczego piona. W~wypadku wyrzucenia dubletu (i.e.~tej samej wartości na~obu kościach) rzut ulega podwojeniu.
 
 #przyklad()[
 	Jeżeli gracz wyrzuca `5-2`, to nie ma podwojenia.
@@ -31,7 +31,7 @@ Gracz ma obowiązek najpierw wprowadzić wszystkie zbite piony. Kolejka gracza k
 Przy grze z~zegarem, jeżeli wiadomo jest, że~ruch jest niemożliwy, gracz powinien po~prostu zakończyć turę naciskając zegar, chociaż ci, którzy lubią życie na~krawędzi, mogą użyć kości dublującej. Obsługa zegara jest istotna, ponieważ pozwala ona na~poprawne odliczanie czasu w~przypadku stosowania systemów Simple Delay czy też Fischera (patrz sekcja @simple-delay i dalsze).
 
 #przyklad()[
-	Jeżeli gracz wyrzuci `3`, to może wejść na~planszę i~poruszyć się o~trzy pola, ie.~wejść na~pole `22` (o~ile może na~nim stanąć).
+	Jeżeli gracz wyrzuci `3`, to może wejść na~planszę i~poruszyć się o~trzy pola, i.e.~wejść na~pole `22` (o~ile może na~nim stanąć).
 ]
 
 #figure(image("../tmp/schematy.pdf", page: 9, width: 100%))

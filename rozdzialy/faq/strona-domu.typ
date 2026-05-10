@@ -4,4 +4,4 @@ Nie znalazłem reguły, która by to definiowała. Wydaje się, że gracze mają
 
 Chris Bray, autor "Backgammon for Dummies" zdaje się ze~mną zgadzać w~tej kwestii.
 
-Tradycyjnie, przed wynalezieniem elektryczności, dom był po~stronie lepiej oświetlonej (eg.~tam, gdzie na~stole stała świeczka).
+Tradycyjnie, przed wynalezieniem elektryczności, dom był po~stronie lepiej oświetlonej (e.g.~tam, gdzie na~stole stała świeczka).

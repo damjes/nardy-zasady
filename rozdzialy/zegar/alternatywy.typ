@@ -3,12 +3,12 @@
 == Alternatywy do~Simple Delay
 
 #uwaga()[
-Mogą występować pewne różnice w~implementacji niżej wymienionych systemów. Niemniej osobiście przyjmuję, że~dana nazwa odpowiada podanemu opisowi, w~szczególności mówiąc o~systemach Fischera i~Bronsteina mam na~myśli doliczanie czasu *po~ruchu*, chociaż prawdopodobnie można się spotkać też~z~odwrotną interpretacją. Osobiście przyjmuję, że~doliczanie czasu *przed* ruchem wymaga wskazania _explicite_ (eg.~_System Fischera z~doliczaniem przed_ lub~w~skrócie _Fischer przed_).
+Mogą występować pewne różnice w~implementacji niżej wymienionych systemów. Niemniej osobiście przyjmuję, że~dana nazwa odpowiada podanemu opisowi, w~szczególności mówiąc o~systemach Fischera i~Bronsteina mam na~myśli doliczanie czasu *po~ruchu*, chociaż prawdopodobnie można się spotkać też~z~odwrotną interpretacją. Osobiście przyjmuję, że~doliczanie czasu *przed* ruchem wymaga wskazania _explicite_ (e.g.~_System Fischera z~doliczaniem przed_ lub~w~skrócie _Fischer przed_).
 ]
 
 === System Fischera
 
-W systemie Fischera główny czas gracza jest zużywany od~razu. Po~ruchu gracza (ie.~po~naciśnięciu przycisku) zostaje doliczony stały, ustalony wcześniej czas.
+W systemie Fischera główny czas gracza jest zużywany od~razu. Po~ruchu gracza (i.e.~po~naciśnięciu przycisku) zostaje doliczony stały, ustalony wcześniej czas.
 
 #przyklad()[
 Gra toczy się wg ustawień 14 minut + 12 sekund w~systemie Fischera. Gracz na~zegarze ma wskazanie `13:59` (co oznacza pozostały czas 13 minut i~59 sekund). Jeżeli gracz wykona ruch w~4 sekundy, to jego zegar wskaże `13:55`, a~po~naciśnięciu przycisku zostanie doliczone jeszcze 12 sekund i~zegar wskaże `14:07`.
@@ -23,7 +23,7 @@ W~systemie Fischera nie stanowi problemu sytuacja, w~której gracz ma do~dyspozy
 System Bronsteina tym różni się od~systemu Fischera, że~czas nie może ulec wydłużeniu.
 
 #przyklad()[
-Dla~przykładu powyżej, jeżeli zegar gracza pokazuje `13:59` i~gracz wykona ruch poniżej 12 sekund (eg.~w~2 sekundy), to zegar po~ruchu dalej będzie wskazywał `13:59`. Dla~ruchu trwającego 15 sekund ostateczne wskazanie wyniesie `13:56`.
+Dla~przykładu powyżej, jeżeli zegar gracza pokazuje `13:59` i~gracz wykona ruch poniżej 12 sekund (e.g.~w~2 sekundy), to zegar po~ruchu dalej będzie wskazywał `13:59`. Dla~ruchu trwającego 15 sekund ostateczne wskazanie wyniesie `13:56`.
 ]
 
 === Różnice względem Simple Delay
