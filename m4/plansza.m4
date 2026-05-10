@@ -1,6 +1,6 @@
 changecom(`##')
 
-define(`ROZMIAR_PIONA', `100')
+define(`ROZMIAR_PIONA', `100')dnl musi być parzyste!
 define(`OBRAMOWANIE_PIONA', `2')dnl musi być parzyste!
 define(`ROZMIAR_FINGERDISH', `70')dnl musi być parzyste!
 
