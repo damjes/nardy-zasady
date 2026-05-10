@@ -1,3 +1,4 @@
+
 .pion-a {
 	fill:   hsl( 45, 100%, 90%);
 	stroke: hsl( 45,  60%, 60%);
@@ -16,4 +17,12 @@
 
 .fingerdish {
 	stroke: none;
+}
+
+.pole-a {
+	fill: hsl(90, 76%, 38%);
+}
+
+.pole-b {
+	fill: hsl(40, 92%, 49%);
 }
