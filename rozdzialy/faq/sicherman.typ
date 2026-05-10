@@ -4,7 +4,7 @@
 
 Kości Sichermana nie są używane w~nardach, zatem ich znajomość nie jest wymagana.
 
-Jeżeli analizujemy rozkład sumy rzutów dwiema kostkami K6, to najczęściej wypada 7, a~najrzadziej 2 i~12. Kości Sichermana mają alternatywny układ ścianek (na~jednej jest 1, 2, 2, 3, 3, 4, zaś na~drugiej 1, 3, 4, 5, 6, 8), jednak dają identyczny rozkład sumy dwóch kości. W~nardach nieistotna jest suma, ale~pojedyncze rzuty, dlatego kości te nie mają zastosowania. Eg. rzuty `3-3` i~`4-2` dają tę samą sumę, ale~nie~są równoważne.
+Jeżeli analizujemy rozkład sumy rzutów dwiema kostkami K6, to najczęściej wypada 7, a~najrzadziej 2 i~12. Kości Sichermana mają alternatywny układ ścianek (na~jednej jest 1, 2, 2, 3, 3, 4, zaś na~drugiej 1, 3, 4, 5, 6, 8), jednak dają identyczny rozkład sumy dwóch kości. W~nardach nieistotna jest suma, ale~pojedyncze rzuty, dlatego kości te nie mają zastosowania. E.g. rzuty `3-3` i~`4-2` dają tę samą sumę, ale~nie~są równoważne.
 
 Można łatwo dowieść (choćby za~pomocą rozkładu wielomianów#footnote[patrz e.g. #surowyLink("https://deltami.edu.pl/media/articles/2009/01/delta-2009-01-kosci-sichermana.pdf") lub~#surowyLink("https://en.wikipedia.org/wiki/Sicherman_dice")]), że~kości Sichermana stanowią jedyną alternatywę dla~dwóch kostek K6, i.e.~nie da się zaproponować układu wartości na~dwóch kostkach K6, który~byłby inny, niż kości klasyczne i~kości Sichermana, a~dawałby ten sam rozkład (za wyjątkiem trywialnych przykładów typu kości 0-5 i~2-7).
 

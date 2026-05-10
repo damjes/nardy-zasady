@@ -33,7 +33,7 @@ Ustawienie początkowe jednego gracza jest lustrzanym odbiciem ustawienia drugie
 
 Na~rycinie powyżej zaznaczono numerację dla~gracza żółtego. Na~początku strzałki mamy pole `24`, wzdłuż strzałki numeracja maleje i~przy grocie ostatnie pole ma numer `1`.
 
-*Gracz czerwony ma swoją numerację, która jest odwrócona w~stosunku do~numeracji gracza żółtego.* Eg.~pole `1` dla~gracza czerwonego, to pole `24` dla~gracza żółtego (pole `24` to pole `1`, pole `18` to pole `7`, itd.). Numeracja może być brana z~pola naprzeciwko (e.g.~pole `18` jest naprzeciwko pola `7`).
+*Gracz czerwony ma swoją numerację, która jest odwrócona w~stosunku do~numeracji gracza żółtego.* E.g.~pole `1` dla~gracza czerwonego, to pole `24` dla~gracza żółtego (pole `24` to pole `1`, pole `18` to pole `7`, itd.). Numeracja może być brana z~pola naprzeciwko (e.g.~pole `18` jest naprzeciwko pola `7`).
 
 #przyklej[Gracz porusza się pionami w~kierunku: z~domu przeciwnika, przez podwórze, potem wchodzi do~swojego domu i~na końcu na~dwór (poza planszę), czyli w~kierunku malejącej numeracji zgodnie ze~strzałką na~rycinie powyżej. Na~najdalszej pozycji w~położeniu początkowym (na~polu `24`) znajdują się dwa piony w~domu przeciwnika. Zatem:]
 
