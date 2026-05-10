@@ -36,7 +36,7 @@ Przy grze z~zegarem, jeżeli wiadomo jest, że~ruch jest niemożliwy, gracz powi
 
 #figure(image("../tmp/schematy.pdf", page: 9, width: 100%))
 
-Gracz ma obowiązek wykonać wszystkie ruchy, a~jeżeli nie jest to możliwe, to najwięcej ruchów, ile jest możliwe. W~przypadku możliwości ruchu jedną albo drugą kością należy wybrać wyższy wynik rzutu. Jeżeli ruch wartością z~jednej kości jest niemożliwy, ale~stanie się możliwy po~odpowiednim ruchu wartością z~drugiej kości, taki ruch z~drugiej kości staje się obowiązkowy. Pogorszenie sytuäcji na~planszy nie stanowi usprawiedliwienia. Niemożliwe do~wykonania ruchy przepadają.
+Gracz ma obowiązek wykonać wszystkie ruchy, a~jeżeli nie jest to możliwe, to najwięcej ruchów, ile jest możliwe. W~przypadku możliwości ruchu jedną albo drugą kością należy wybrać wyższy wynik rzutu. Jeżeli ruch wartością z~jednej kości jest niemożliwy, ale~stanie się możliwy po~odpowiednim ruchu wartością z~drugiej kości, taki ruch z~drugiej kości staje się obowiązkowy. Pogorszenie sytuäcji na~planszy nie stanowi usprawiedliwienia#footnote[sytuäcję _zugzwangu_ omówiono w~sekcji @zugzwang]. Niemożliwe do~wykonania ruchy przepadają.
 
 Gracz może (po~spełnieniu warunków) wyprowadzić piona na~dwór wtedy, kiedy dystans do~końca planszy (czyli numer pola) odpowiada wyrzuconej wartości. W~przypadku braku możliwości ruchu, spowodowanego tym, że~piony stoją za~blisko końca planszy, dopuszcza się wyprowadzenie na~dwór piona najdalszego.
 
