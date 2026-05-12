@@ -25,8 +25,13 @@ jobs:
 
       - name: Instalacja draw.io
         run: |
-          DRAWIO_VERSION=$(curl -s https://api.github.com/repos/jgraph/drawio-desktop/releases/latest \
-            | grep '"tag_name"' | sed 's/.*"v\([^"]*\)".*/\1/')
+          # DRAWIO_VERSION=$(curl -s https://api.github.com/repos/jgraph/drawio-desktop/releases/latest \
+          #   | grep '"tag_name"' | sed 's/.*"v\([^"]*\)".*/\1/')
+          DRAWIO_VERSION="29.7.9" # Wersja 30 się wiesza:
+          # https://github.com/damjes/nardy-zasady/actions/runs/25601048183
+          # https://github.com/jgraph/drawio-desktop/issues/2426
+          # po naprawieniu tego problemu można będzie wrócić do pobierania najnowszej wersji
+          # o ile wcześniej nie zmigrujemy na typsta :)
           wget -q "https://github.com/jgraph/drawio-desktop/releases/download/v${DRAWIO_VERSION}/drawio-amd64-${DRAWIO_VERSION}.deb"
           sudo apt-get install -y ./drawio-amd64-${DRAWIO_VERSION}.deb
 
