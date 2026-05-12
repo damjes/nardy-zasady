@@ -64,6 +64,8 @@ jobs:
 
       - name: Budowanie PDF-ów
         run: make
+        env:
+          ELECTRON_DISABLE_SANDBOX: 1
       
       - name: Pobranie wersji z Gita
         id: pobierz_wersje
