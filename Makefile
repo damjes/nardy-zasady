@@ -7,13 +7,21 @@ ZALEZNOSCI = $(FORMATY:%=tmp/deps-%.d)
 
 KATALOGI_WYJSCIOWE = pdf tmp
 
+DRAW_WSPOLNE = --disable-gpu
+
+ifeq ($(DISPLAY),)
+DRAWIO = xvfb-run --auto-servernum drawio --no-sandbox $(DRAW_WSPOLNE)
+else
+DRAWIO ?= drawio $(DRAW_WSPOLNE)
+endif
+
 all: $(PDFY)
 
 pdf/nardy-%.pdf: formaty/%.typ tmp/schematy.pdf tmp/wersja.typ pdf
 	typst compile --root . --deps tmp/deps-$*.d --deps-format make $< $@
 
 tmp/schematy.pdf: schematy.drawio tmp
-	drawio $< -xa --crop -o $@
+	$(DRAWIO) $< -xa --crop -o $@
 
 tmp/wersja.typ: wersja.sh .git/HEAD .git/refs/*/* tmp
 	./$< > $@

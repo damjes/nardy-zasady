@@ -63,7 +63,7 @@ jobs:
         run: sudo locale-gen pl_PL.UTF-8
 
       - name: Budowanie PDF-ów
-        run: xvfb-run make
+        run: make
       
       - name: Pobranie wersji z Gita
         id: pobierz_wersje
