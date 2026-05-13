@@ -8,7 +8,6 @@ ZALEZNOSCI = $(FORMATY:%=tmp/deps-%.d)
 KATALOGI_WYJSCIOWE = pdf tmp
 
 DRAW_WSPOLNE = -xa --crop
-# --disable-gpu # dla 30.0.0
 
 ifeq ($(DISPLAY),)
 DRAWIO = xvfb-run --auto-servernum drawio --no-sandbox $(DRAW_WSPOLNE)
