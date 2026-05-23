@@ -1,0 +1,210 @@
+%!PS
+%%LanguageLevel: 3
+
+/LinLibertineB findfont 12 scalefont setfont
+
+/fi-piona 40 def
+/grubosc-piona 10 def
+
+/pionow {
+	fi-piona mul
+} def
+
+/wysokosc-pola 5 def
+/odstep-do-polowy 2 pionow def
+
+/baza-y
+	wysokosc-pola pionow odstep-do-polowy add
+def
+
+/ramka 10 def
+/polowa-szparki 1 def
+
+/licz-x {
+	fi-piona mul ramka add
+} def
+
+/licz-y {
+	fi-piona mul baza-y exch sub
+} def
+
+6 licz-x 
+ramka add
+dup /bok-x-wewn exch def
+
+1 pionow add
+dup /bok-x-zewn exch def
+
+ramka add
+/granica-pudelka-x exch def
+
+/granica-pudelka-y
+	baza-y
+	ramka add
+def
+
+baza-y
+grubosc-piona 15 mul sub
+dup /bok-y-piony exch def
+
+ramka sub
+/bok-y-kostki exch def
+
+/ustaw-strone {
+	/y-max exch def
+	/y-min exch def
+	/x-max exch def
+	/x-min exch def
+
+    x-max x-min sub
+	y-max y-min sub
+	2 array astore
+    
+	1 dict begin
+      /PageSize exch def
+      currentdict
+    end
+    setpagedevice
+
+	x-min neg y-min neg translate
+} def
+
+granica-pudelka-x dup neg exch
+granica-pudelka-y dup neg exch
+ustaw-strone
+
+/prostokat {
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+
+	x1 y1 moveto
+	x2 y1 lineto
+	x2 y2 lineto
+	x1 y2 lineto
+	closepath
+} def
+
+/normalizuj {
+	1 add 2 div
+} def
+
+/kolory-pionow [
+	<<
+		/fill [1.00 0.95 0.80]
+		/stroke [0.84 0.72 0.36]
+		/fingerdish [0.90 0.83 0.60]
+	>>
+	<< 
+		/fill [0.90 0.15 0.00]
+		/stroke [0.70 0.12 0.00]
+		/fingerdish [0.80 0.13 0.00]
+	>>
+] def
+
+/kolory-pol [
+    [0.90 0.70 90]
+    [0.95 0.95 40]
+] def
+
+/kolor-planszy [
+	0.6 0.4 20
+] def
+
+/kolory-zawiasow <<
+	/fill [0.80 0.80 0.80]
+	/stroke [0.60 0.60 0.60]
+>> def
+
+/kolor-wnetrza [
+	0 1 0
+] def
+
+/wybierz-kolor {
+	aload pop % rozpisz kolor
+	360 div 3 1 roll % oblicz H z kąta i zrób SBkąt -> HSB
+	sethsbcolor % i ustaw
+} def
+
+/wybierz-wariant-koloru {
+	2 mod get wybierz-kolor
+} def
+
+/pole {
+	/skala-y exch def
+	/skala-x exch def
+	/wariant exch def
+	/pozycja exch def
+
+	kolory-pol wariant wybierz-wariant-koloru
+
+	pozycja licz-x skala-x mul
+	0 licz-y skala-y mul
+	moveto
+
+	pozycja 1 add licz-x skala-x mul
+	0 licz-y skala-y mul
+	lineto
+
+	pozycja 0.5 add licz-x skala-x mul
+	wysokosc-pola licz-y skala-y mul
+	lineto
+
+	closepath
+	fill
+} def
+
+% rysowanie pudełka
+
+[-1 1] {
+	/skala-x exch def
+	% rysuj połówkę (lewą lub prawą)
+
+	kolor-planszy wybierz-kolor
+
+	polowa-szparki skala-x mul
+	granica-pudelka-y neg
+	granica-pudelka-x skala-x mul
+	granica-pudelka-y
+	prostokat fill
+
+	kolor-wnetrza wybierz-kolor
+
+	0 licz-x skala-x mul
+	baza-y neg
+	6 licz-x skala-x mul
+	baza-y
+	prostokat fill
+
+	bok-x-wewn skala-x mul
+	bok-y-kostki neg
+	bok-x-zewn skala-x mul
+	bok-y-kostki
+	prostokat fill
+
+	[-1 1] {
+		/skala-y exch def
+		% rysuj ćwiartkę (górną lub dolną)
+
+		kolor-wnetrza wybierz-kolor
+
+		bok-x-wewn skala-x mul
+		bok-y-piony skala-y mul
+		bok-x-zewn skala-x mul
+		baza-y skala-y mul
+		prostokat fill
+
+		/podstawa-koloru
+			skala-x normalizuj
+			skala-y normalizuj add cvi
+		def
+
+		0 1 5 {
+			dup podstawa-koloru add
+			skala-x skala-y pole
+		} for
+	} forall
+} forall
+
+showpage
