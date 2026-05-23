@@ -1,0 +1,43 @@
+%!PS
+%%LanguageLevel: 3
+
+/kolory-pionow [
+	<<
+		/fill [1.00 0.95 0.80]
+		/stroke [0.84 0.72 0.36]
+		/fingerdish [0.90 0.83 0.60]
+	>>
+	<< 
+		/fill [0.90 0.15 0.00]
+		/stroke [0.70 0.12 0.00]
+		/fingerdish [0.80 0.13 0.00]
+	>>
+] def
+
+/kolory-pol [
+    [0.90 0.70 90]
+    [0.95 0.95 40]
+] def
+
+/kolor-planszy [
+	0.6 0.4 20
+] def
+
+/kolory-zawiasow <<
+	/fill [0.80 0.80 0.80]
+	/stroke [0.60 0.60 0.60]
+>> def
+
+/kolor-wnetrza [
+	0 1 0
+] def
+
+/wybierz-kolor {
+	aload pop % rozpisz kolor
+	360 div 3 1 roll % oblicz H z kąta i zrób SBkąt -> HSB
+	sethsbcolor % i ustaw
+} def
+
+/wybierz-wariant-koloru {
+	2 mod get wybierz-kolor
+} def

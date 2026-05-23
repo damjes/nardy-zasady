@@ -21,3 +21,5 @@ out:
 rebuild: clean all
 
 ${OBRAZKI}: biblioteka/biblioteka.ps
+
+biblioteka/biblioteka.ps: biblioteka/wymiary.ps
