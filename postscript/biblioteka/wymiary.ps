@@ -1,0 +1,70 @@
+%!PS
+%%LanguageLevel: 3
+
+/LinLibertineB findfont 12 scalefont setfont
+
+/fi-piona 40 def
+/grubosc-piona 10 def
+
+/pionow {
+	fi-piona mul
+} def
+
+/wysokosc-pola 5 def
+/odstep-do-polowy 2 pionow def
+
+/baza-y
+	wysokosc-pola pionow odstep-do-polowy add
+def
+
+/ramka 10 def
+/polowa-szparki 1 def
+
+/licz-x {
+	fi-piona mul ramka add
+} def
+
+/licz-y {
+	fi-piona mul baza-y exch sub
+} def
+
+6 licz-x 
+ramka add
+dup /bok-x-wewn exch def
+
+1 pionow add
+dup /bok-x-zewn exch def
+
+ramka add
+/granica-pudelka-x exch def
+
+/granica-pudelka-y
+	baza-y
+	ramka add
+def
+
+baza-y
+grubosc-piona 15 mul sub
+dup /bok-y-piony exch def
+
+ramka sub
+/bok-y-kostki exch def
+
+/ustaw-strone {
+	/y-max exch def
+	/y-min exch def
+	/x-max exch def
+	/x-min exch def
+
+    x-max x-min sub
+	y-max y-min sub
+	2 array astore
+    
+	1 dict begin
+      /PageSize exch def
+      currentdict
+    end
+    setpagedevice
+
+	x-min neg y-min neg translate
+} def

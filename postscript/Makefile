@@ -2,7 +2,7 @@
 
 OBRAZKI = $(wildcard obrazki/*.ps)
 
-GS_OPTS = --permit-file-read=biblioteka
+GS_OPTS = --permit-file-read='biblioteka/*.ps'
 GS = gs
 
 .PHONY: all clean
@@ -17,3 +17,7 @@ clean:
 
 out:
 	mkdir -p out
+
+rebuild: clean all
+
+${OBRAZKI}: biblioteka/biblioteka.ps
