@@ -39,6 +39,7 @@
 } def
 
 /pion {
+	newpath % bo się przykleja do ostatniego napisu
 	1 dup setlinewidth
 	fi-piona sub 2 div /r exch def
 
@@ -58,6 +59,62 @@
 	kolor /fingerdish get wybierz-kolor
 	x y 13 0 360 arc
 	fill
+} def
+
+/rzad-pionow {
+	/kierunek exch def
+	/y exch def
+	/x exch def
+	/kolor exch def
+	/liczba-pionow exch def
+
+	/delta-y
+		fi-piona kierunek mul
+	def
+
+	liczba-pionow {
+		kolor x y pion
+		/y y delta-y add def
+	} repeat
+} def
+
+/piony-na-polu {
+	/pole exch def
+	/liczba-pionow exch def
+	/kolor exch def
+
+	/kierunek 1
+	pole 12 gt {
+		neg
+	} if def
+
+	liczba-pionow
+	kolor
+	pole licz-xy-pola fi-piona 2 div kierunek mul add
+	kierunek
+	rzad-pionow
+} def
+
+/piony-symetrycznie {
+	/pole exch def
+	/liczba-pionow exch def
+
+	kolory-pionow 0 get
+	liczba-pionow
+	pole
+	piony-na-polu
+
+	kolory-pionow 1 get
+	liczba-pionow
+	25 pole sub
+	piony-na-polu
+} def
+
+/polozenie-poczatkowe {
+	2 24 piony-symetrycznie
+	5 13 piony-symetrycznie
+	3 8 piony-symetrycznie
+	5 6 piony-symetrycznie
 } def
 
 /plansza {

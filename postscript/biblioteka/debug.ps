@@ -1,0 +1,36 @@
+%!PS
+%%LanguageLevel: 3
+
+/pisz-stos {
+	(- stos -) ==
+	pstack
+	(---) ==
+} def
+
+/fiducjal {
+	gsave
+
+	/rozmiar-fid 20 def
+
+	0 0 1 setrgbcolor
+	2 setlinewidth
+
+	2 copy moveto
+
+	rozmiar-fid -2 div 0 rmoveto
+	rozmiar-fid 0 rlineto
+	rozmiar-fid -2 div dup rmoveto
+	0 rozmiar-fid rlineto
+	stroke
+
+	newpath
+	rozmiar-fid 3 div
+	0 360 arc
+	stroke
+
+	grestore
+} def
+
+/fiducjal-dup {
+	2 copy fiducjal
+} def
