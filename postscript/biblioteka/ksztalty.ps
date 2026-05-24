@@ -38,6 +38,28 @@
 	fill
 } def
 
+/pion {
+	1 dup setlinewidth
+	fi-piona sub 2 div /r exch def
+
+	/y exch def
+	/x exch def
+	/kolor exch def
+
+	x y r 0 360 arc
+	gsave
+		kolor /fill get wybierz-kolor
+		fill
+	grestore
+	
+	kolor /stroke get wybierz-kolor
+	stroke
+
+	kolor /fingerdish get wybierz-kolor
+	x y 13 0 360 arc
+	fill
+} def
+
 /plansza {
 	[-1 1] {
 		/skala-x exch def
