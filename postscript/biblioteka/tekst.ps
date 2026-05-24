@@ -1,0 +1,61 @@
+%!PS
+%%LanguageLevel: 3
+
+/wybierz-rodzine-fontow {
+	/LinLibertineB findfont
+} def
+
+/centruj-tekst {
+	dup stringwidth pop
+	2 div neg
+	0 rmoveto
+	show
+} def
+
+/ustal-wysokosc-tekstu {
+	gsave
+	0 0 moveto
+	true charpath pathbbox
+	exch pop
+	sub
+	exch pop
+	2 div
+	grestore
+} def
+
+/obniz-tekst {
+	0 exch rmoveto
+} def
+
+/font-numeracja {
+	wybierz-rodzine-fontow
+	8 scalefont setfont
+} def
+
+font-numeracja (1234567890) ustal-wysokosc-tekstu
+/obnizenie-numeracji exch def
+
+/centruj-numeracje {
+	font-numeracja
+	0 obnizenie-numeracji rmoveto
+	centruj-tekst
+} def
+
+/numeracja-planszy {
+	kolor-numeracji wybierz-kolor
+
+	1 1 24 {
+		dup licz-xy-pola
+
+		dup 12 gt {
+			1
+		} {
+			-1
+		} ifelse
+
+		2 div ramka mul add
+		moveto
+		
+		(00) cvs centruj-numeracje
+	} for
+} def

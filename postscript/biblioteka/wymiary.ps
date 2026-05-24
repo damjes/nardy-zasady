@@ -1,8 +1,6 @@
 %!PS
 %%LanguageLevel: 3
 
-/LinLibertineB findfont 12 scalefont setfont
-
 /fi-piona 40 def
 /grubosc-piona 10 def
 
@@ -49,6 +47,26 @@ dup /bok-y-piony exch def
 
 ramka sub
 /bok-y-kostki exch def
+
+/licz-xy-pola {
+	dup /x-24 exch def
+
+	x-24 12 gt {
+		25 exch sub
+	} if % normalizuj do 1..12
+
+	dup 6 gt {
+		6.5 sub licz-x
+	} {
+		6.5 sub neg licz-x neg
+	} ifelse
+
+	x-24 12 gt {
+		baza-y
+	} {
+		baza-y neg
+	} ifelse
+} def
 
 /ustaw-strone {
 	/y-max exch def
