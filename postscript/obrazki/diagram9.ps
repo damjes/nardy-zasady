@@ -1,0 +1,197 @@
+%!PS
+%%LanguageLevel: 3
+
+(biblioteka/biblioteka.ps) run
+
+% ════════════════════════════════════════════════════════════════════════════
+% Parametry specyficzne dla tego diagramu
+% ════════════════════════════════════════════════════════════════════════════
+
+/fi-kostki     fi-piona 5 sub def    % bok kostki (35 pt)
+/szpara-kostek 5 def
+/margines      15 def
+
+/r-naroz       ramka def             % promień naroży strzałek
+/grub-strz     fi-piona 12 div def
+/y-strz        fi-piona def          % poziom poziomej linii strzałek
+/dl-grotu      grub-strz 4 mul def
+
+/y-pas-kostek  granica-pudelka-y margines add def
+
+% ════════════════════════════════════════════════════════════════════════════
+% Procedury pomocnicze
+% ════════════════════════════════════════════════════════════════════════════
+
+% X centrum pola n (1–24); bez zmiennej /x-24 → brak konfliktu z licz-xy-pola
+/pole-x {
+    dup 12 gt { 25 exch sub } if
+    dup 6 gt {
+        6.5 sub licz-x
+    } {
+        6.5 sub neg licz-x neg
+    } ifelse
+} def
+
+% Ścieżka zaokrąglonego prostokąta (x0 y0 x1 y1 r)
+/zaok-prostokat {
+    /zp-r  exch def
+    /zp-y1 exch def  /zp-x1 exch def
+    /zp-y0 exch def  /zp-x0 exch def
+    zp-x0 zp-r add  zp-y0  moveto
+    zp-x1 zp-y0   zp-x1 zp-y1   zp-r arcto 4 {pop} repeat
+    zp-x1 zp-y1   zp-x0 zp-y1   zp-r arcto 4 {pop} repeat
+    zp-x0 zp-y1   zp-x0 zp-y0   zp-r arcto 4 {pop} repeat
+    zp-x0 zp-y0   zp-x1 zp-y0   zp-r arcto 4 {pop} repeat
+    closepath
+} def
+
+% Groty strzałek
+/grot-prawo {  % (x y) → grot wskazujący w prawo
+    /g-y exch def  /g-x exch def
+    newpath
+    g-x                      g-y                     moveto
+    g-x dl-grotu sub          g-y dl-grotu 2 div add  lineto
+    g-x dl-grotu sub          g-y dl-grotu 2 div sub  lineto
+    closepath fill
+} def
+
+/grot-gore {   % (x y) → grot wskazujący w górę
+    /g-y exch def  /g-x exch def
+    newpath
+    g-x                       g-y                    moveto
+    g-x dl-grotu 2 div sub    g-y dl-grotu sub       lineto
+    g-x dl-grotu 2 div add    g-y dl-grotu sub       lineto
+    closepath fill
+} def
+
+% Kostka do gry: (cx cy n aktywna) →
+/r-kropki fi-kostki 14 div def
+
+/kropka-k {   % (x y) → koło o promieniu r-kropki
+    newpath r-kropki 0 360 arc fill
+} def
+
+/koscik {
+    /k-aktywna exch def
+    /k-n       exch def
+    /k-cy      exch def
+    /k-cx      exch def
+
+    /k-p  fi-kostki 2   div def    % centrum → krawędź
+    /k-r  fi-kostki 8   div def    % promień naroży
+    /k-d  fi-kostki 3.5 div def    % offset oczka od centrum
+
+    gsave
+
+    k-aktywna { [ 0.20 0.95 50 ] } { [ 0.00 0.75  0 ] } ifelse
+    wybierz-kolor
+    newpath  k-cx k-p sub  k-cy k-p sub  k-cx k-p add  k-cy k-p add  k-r zaok-prostokat fill
+
+    k-aktywna { [ 0.20 0.70 45 ] } { [ 0.00 0.55  0 ] } ifelse
+    wybierz-kolor
+    0.8 setlinewidth
+    newpath  k-cx k-p sub  k-cy k-p sub  k-cx k-p add  k-cy k-p add  k-r zaok-prostokat stroke
+
+    k-aktywna { 0 0 0 setrgbcolor } { [ 0.00 0.45  0 ] wybierz-kolor } ifelse
+
+    k-n 2 mod 1 eq {  k-cx              k-cy              kropka-k  } if  % środek
+    k-n 2 ge       {  k-cx k-d add      k-cy k-d sub      kropka-k
+                      k-cx k-d sub      k-cy k-d add      kropka-k  } if  % para I
+    k-n 4 ge       {  k-cx k-d add      k-cy k-d add      kropka-k
+                      k-cx k-d sub      k-cy k-d sub      kropka-k  } if  % para II
+    k-n 6 ge       {  k-cx k-d add      k-cy              kropka-k
+                      k-cx k-d sub      k-cy              kropka-k  } if  % środkowe
+
+    grestore
+} def
+
+% ════════════════════════════════════════════════════════════════════════════
+% Ustawienie strony
+% ustaw-strone ciągnie ze stosu (jak w plansza.ps): x-min x-max y-min y-max
+% ════════════════════════════════════════════════════════════════════════════
+
+granica-pudelka-x dup neg exch                    % x: -310 .. 310
+fi-piona 2 div neg                                % y-min: trochę pod equatorem
+y-pas-kostek fi-kostki add margines add           % y-max: nad kostkami
+ustaw-strone
+
+% ════════════════════════════════════════════════════════════════════════════
+% Plansza — clip do y ≥ 0, żeby dolna połowa nie widniała
+% ════════════════════════════════════════════════════════════════════════════
+
+gsave
+    newpath
+    granica-pudelka-x neg  0  moveto
+    granica-pudelka-x      0  lineto
+    granica-pudelka-x      granica-pudelka-y  lineto
+    granica-pudelka-x neg  granica-pudelka-y  lineto
+    closepath clip
+    plansza
+    numeracja-planszy
+grestore
+
+% ════════════════════════════════════════════════════════════════════════════
+% Piony
+% ════════════════════════════════════════════════════════════════════════════
+
+/cr kolory-pionow 1 get def   % ciemnoczerwony
+/cb kolory-pionow 0 get def   % kremowy
+
+cr 2 24 piony-na-polu
+cr 2 23 piony-na-polu
+cb 1 22 piony-na-polu          % blot
+cr 1 20 piony-na-polu
+cr 2 19 piony-na-polu
+cr 1 18 piony-na-polu
+cr 2 17 piony-na-polu
+cb 4 13 piony-na-polu
+
+cb  0  fi-piona 2 div neg  pion  % zbity pion na bandzie
+
+% ════════════════════════════════════════════════════════════════════════════
+% Strzałki ruchu
+% ════════════════════════════════════════════════════════════════════════════
+
+0 0 0 setrgbcolor
+grub-strz setlinewidth
+1 setlinecap
+1 setlinejoin
+
+% Strzałka 1: pętla — banda → pole 24
+newpath
+0  fi-piona 2 div neg  moveto
+granica-pudelka-x neg  fi-piona 2 div neg    granica-pudelka-x neg  y-strz        r-naroz arcto 4 {pop} repeat
+granica-pudelka-x neg  y-strz                24 pole-x  y-strz                    r-naroz arcto 4 {pop} repeat
+24 pole-x dl-grotu sub  y-strz  lineto
+stroke
+24 pole-x  y-strz  grot-prawo
+
+% Strzałka 2: pole 24 → 23
+newpath  24 pole-x  y-strz  moveto  23 pole-x dl-grotu sub  y-strz  lineto  stroke
+23 pole-x  y-strz  grot-prawo
+
+% Strzałka 3: pole 23 → zakręt → pole 22 ↑
+newpath
+23 pole-x  y-strz  moveto
+22 pole-x  y-strz    22 pole-x  baza-y fi-piona sub    r-naroz arcto 4 {pop} repeat
+22 pole-x  baza-y fi-piona sub  lineto
+stroke
+22 pole-x  baza-y fi-piona sub  grot-gore
+
+% ════════════════════════════════════════════════════════════════════════════
+% Kostki (1–3 aktywne żółte, 4–6 szare)
+% ════════════════════════════════════════════════════════════════════════════
+
+/y-srodek-kostek  y-pas-kostek fi-kostki 2 div add  def
+/x-kostek-lewy    fi-kostki 6 mul  szpara-kostek 5 mul  add  2 div  neg  def
+
+1 1 6 {
+    /k-i exch def
+    x-kostek-lewy  k-i 1 sub  fi-kostki szpara-kostek add  mul  add  fi-kostki 2 div add
+    y-srodek-kostek
+    k-i
+    k-i 3 le
+    koscik
+} for
+
+showpage
